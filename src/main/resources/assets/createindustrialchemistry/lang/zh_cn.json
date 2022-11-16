@@ -85,9 +85,9 @@
   "item.createindustrialchemistry.molten_salt_tank" : "熔融盐罐",
   "iupac.createindustrialchemistry.molten_salt_tank" : "熔融氯化钠",
   "formula.createindustrialchemistry.molten_salt_tank" : "NaCl(l)",
-  "fluid.createindustrialchemistry.chlorine": "氯",
-  "item.createindustrialchemistry.chlorine_tank" : "氯罐",
-  "iupac.createindustrialchemistry.chlorine_tank" : "氯",
+  "fluid.createindustrialchemistry.chlorine": "氯气",
+  "item.createindustrialchemistry.chlorine_tank" : "氯气罐",
+  "iupac.createindustrialchemistry.chlorine_tank" : "氯气",
   "formula.createindustrialchemistry.chlorine_tank" : "Cl",
 
   "block.createindustrialchemistry.acidic_sand": "含酸的沙子",
