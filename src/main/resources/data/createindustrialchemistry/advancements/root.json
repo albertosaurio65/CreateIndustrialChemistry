@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "createindustrialchemistry:hydrogen_tank"
+    },
+    "title": {
+      "translate": "advancement.createindustrialchemistry.root"
+    },
+    "description": {
+      "color": "#DBA213",
+      "translate": "advancement.createindustrialchemistry.root.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "background": "minecraft:textures/block/copper_block.png"
+  },
+  "criteria": {
+    "0": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {}
+    }
+  },
+  "requirements": [
+    [
+      "0"
+    ]
+  ]
+}

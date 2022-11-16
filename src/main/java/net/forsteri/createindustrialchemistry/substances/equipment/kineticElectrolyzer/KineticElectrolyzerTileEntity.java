@@ -11,12 +11,8 @@ import com.simibubi.create.foundation.utility.AnimationTickHolder;
 import com.simibubi.create.foundation.utility.Couple;
 import com.simibubi.create.foundation.utility.VecHelper;
 import net.forsteri.createindustrialchemistry.entry.substancesRegister.tileEntities.RecipeTypes;
-import net.minecraft.client.particle.GlowParticle;
-import net.minecraft.client.particle.ParticleEngine;
-import net.minecraft.client.particle.SpriteSet;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.core.particles.DustParticleOptions;
 import net.minecraft.core.particles.ItemParticleOption;
 import net.minecraft.core.particles.ParticleOptions;
 import net.minecraft.core.particles.ParticleTypes;
@@ -33,10 +29,9 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.Vec3;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.items.CapabilityItemHandler;
-import net.minecraftforge.items.IItemHandler;
 
-import java.util.*;
+import java.util.Optional;
+import java.util.Random;
 
 @SuppressWarnings("ConstantConditions")
 public class KineticElectrolyzerTileEntity extends BasinOperatingTileEntity {
@@ -45,7 +40,7 @@ public class KineticElectrolyzerTileEntity extends BasinOperatingTileEntity {
 
     public int runningTicks;
 
-    protected int tickUntilSpawnParticle = 0;
+    protected int tickUntilSpawnParticle = 3;
 
     public int processingTicks;
     public boolean running;
@@ -75,8 +70,9 @@ public class KineticElectrolyzerTileEntity extends BasinOperatingTileEntity {
     public void tick() {
         super.tick();
 
-        if(tickUntilSpawnParticle == 0 && getSpeed() != 0) {
+        if(tickUntilSpawnParticle == 0) {
             spawnParticles(level, getBlockPos().below());
+            spawnParticles(level, getBlockPos().below().below());
             tickUntilSpawnParticle = 3;
         }
         tickUntilSpawnParticle--;
@@ -174,28 +170,10 @@ public class KineticElectrolyzerTileEntity extends BasinOperatingTileEntity {
         level.addParticle(data, center.x, center.y - 1.75f, center.z, target.x, target.y, target.z);
     }
 
-    @Override
-    protected List<Recipe<?>> getMatchingRecipes() {
-        List<Recipe<?>> matchingRecipes = super.getMatchingRecipes();
-
-        Optional<BasinTileEntity> basin = getBasin();
-        if (basin.isEmpty())
-            return matchingRecipes;
-
-        BasinTileEntity basinTileEntity = basin.get();
-
-        IItemHandler availableItems = basinTileEntity
-                .getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY)
-                .orElse(null);
-        if (availableItems == null)
-            return matchingRecipes;
-
-        for (int i = 0; i < availableItems.getSlots(); i++) {
-            ItemStack stack = availableItems.getStackInSlot(i);
-        }
-
-        return matchingRecipes;
-    }
+//    @Override
+//    protected List<Recipe<?>> getMatchingRecipes() {
+//        return super.getMatchingRecipes();
+//    }
 
     @Override
     protected <C extends Container> boolean matchStaticFilters(Recipe<C> r) {
@@ -249,7 +227,6 @@ public class KineticElectrolyzerTileEntity extends BasinOperatingTileEntity {
     }
 
     private static void spawnParticles(Level pLevel, BlockPos pPos) {
-        double d0 = 0.5625D;
         Random random = pLevel.random;
 
         for(Direction direction : Direction.values()) {

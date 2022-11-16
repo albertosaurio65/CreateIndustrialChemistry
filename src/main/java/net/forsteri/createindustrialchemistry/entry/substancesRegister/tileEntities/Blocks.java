@@ -8,6 +8,7 @@ import com.tterrag.registrate.util.entry.BlockEntry;
 import net.forsteri.createindustrialchemistry.CreateIndustrialChemistry;
 import net.forsteri.createindustrialchemistry.entry.creativeModeTabs.EquipmentTab;
 import net.forsteri.createindustrialchemistry.substances.equipment.kineticElectrolyzer.KineticElectrolyzerBlock;
+import net.forsteri.createindustrialchemistry.substances.equipment.kineticElectrolyzer.KineticElectrolyzerBlockItem;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
 import static com.simibubi.create.AllTags.pickaxeOnly;
@@ -24,7 +25,7 @@ public class Blocks {
             .blockstate(BlockStateGen.horizontalBlockProvider(true))
             .transform(pickaxeOnly())
             .properties(BlockBehaviour.Properties::noOcclusion)
-            .item()
+            .item(KineticElectrolyzerBlockItem::new)
             .build()
             .transform(BlockStressDefaults.setImpact(8))
             .register();

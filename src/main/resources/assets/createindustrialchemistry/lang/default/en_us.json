@@ -108,5 +108,8 @@
   "itemGroup.mixture_tab" : "Mixtures",
 
   "iupac.createindustrialchemistry.format": "IUPAC Name: %1$s",
-  "formula.createindustrialchemistry.format": "Chemical Formula: %1$s"
+  "formula.createindustrialchemistry.format": "Chemical Formula: %1$s",
+
+  "advancement.createindustrialchemistry.root": "Welcome to chemistry",
+  "advancement.createindustrialchemistry.root.desc": "the world of \"magic\""
 }

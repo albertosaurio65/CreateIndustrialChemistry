@@ -1,0 +1,33 @@
+{
+  "credit": "Made with Blockbench",
+  "textures": {
+    "0": "createindustrialchemistry:block/kinetic_electrolyzer",
+    "particle": "createindustrialchemistry:block/kinetic_electrolyzer"
+  },
+  "elements": [
+    {
+      "from": [6, 4, 9],
+      "to": [10, 17, 13],
+      "faces": {
+        "north": {"uv": [4, 4.875, 4.5, 6.5], "texture": "#0"},
+        "east": {"uv": [4, 4.875, 4.5, 6.5], "texture": "#0"},
+        "south": {"uv": [4, 4.875, 4.5, 6.5], "texture": "#0"},
+        "west": {"uv": [4, 4.875, 4.5, 6.5], "texture": "#0"},
+        "up": {"uv": [1.75, 6, 2.25, 6.5], "texture": "#0"},
+        "down": {"uv": [1.75, 6, 2.25, 6.5], "texture": "#0"}
+      }
+    },
+    {
+      "from": [6, 4, 3],
+      "to": [10, 17, 7],
+      "faces": {
+        "north": {"uv": [4, 4.875, 4.5, 6.5], "texture": "#0"},
+        "east": {"uv": [4, 4.875, 4.5, 6.5], "texture": "#0"},
+        "south": {"uv": [4, 4.875, 4.5, 6.5], "texture": "#0"},
+        "west": {"uv": [4, 4.875, 4.5, 6.5], "texture": "#0"},
+        "up": {"uv": [1.75, 6, 2.25, 6.5], "texture": "#0"},
+        "down": {"uv": [1.75, 6, 2.25, 6.5], "texture": "#0"}
+      }
+    }
+  ]
+}

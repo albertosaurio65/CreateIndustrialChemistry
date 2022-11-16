@@ -73,6 +73,10 @@
   "item.createindustrialchemistry.distilled_water_tank" : "蒸馏水罐",
   "iupac.createindustrialchemistry.distilled_water_tank" : "蒸馏水",
   "formula.createindustrialchemistry.distilled_water_tank" : "H2O",
+  "fluid.createindustrialchemistry.carbon_monoxide": "一氧化碳",
+  "item.createindustrialchemistry.carbon_monoxide_tank" : "一氧化碳罐",
+  "iupac.createindustrialchemistry.carbon_monoxide_tank" : "一氧化碳",
+  "formula.createindustrialchemistry.carbon_monoxide_tank" : "CO",
   "fluid.createindustrialchemistry.oxygen": "氧气",
   "item.createindustrialchemistry.oxygen_tank" : "氧气罐",
   "iupac.createindustrialchemistry.oxygen_tank" : "氧气",
@@ -104,5 +108,8 @@
   "itemGroup.mixture_tab" : "机械动力: 工业化学 | 混合物",
 
   "iupac.createindustrialchemistry.format": "中文化学命名法名: %1$s",
-  "formula.createindustrialchemistry.format": "化学式: %1$s"
+  "formula.createindustrialchemistry.format": "化学式: %1$s",
+
+  "advancement.createindustrialchemistry.root": "欢迎来到化学世界",
+  "advancement.createindustrialchemistry.root.desc": "神奇的魔法"
 }

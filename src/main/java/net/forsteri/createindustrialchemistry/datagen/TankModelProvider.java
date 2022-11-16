@@ -26,9 +26,7 @@ public class TankModelProvider extends ItemModelProvider {
                     getBuilder(Objects.requireNonNull(item.get().getRegistryName()).toString())
                             .parent(new ModelFile.UncheckedModelFile("item/generated"))
                             .texture("layer0", new ResourceLocation(Objects.requireNonNull(item.get().getRegistryName()).getNamespace(), "item/fluid_tanks/empty_metal_tank"))
-                            .texture("layer1", new ResourceLocation(Objects.requireNonNull(item.get().getRegistryName()).getNamespace(), "item/fluid_tanks/tank_overlay"))
-//                        .override()
-                    ;
+                            .texture("layer1", new ResourceLocation(Objects.requireNonNull(item.get().getRegistryName()).getNamespace(), "item/fluid_tanks/tank_overlay"));
                 }
 
             }

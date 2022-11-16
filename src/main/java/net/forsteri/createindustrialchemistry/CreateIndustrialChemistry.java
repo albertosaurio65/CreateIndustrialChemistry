@@ -2,22 +2,23 @@ package net.forsteri.createindustrialchemistry;
 
 import com.mojang.logging.LogUtils;
 import com.simibubi.create.foundation.data.CreateRegistrate;
-import com.tterrag.registrate.providers.ProviderType;
 import com.tterrag.registrate.util.nullness.NonNullSupplier;
 import net.forsteri.createindustrialchemistry.entry.handlers.ColorHandlers;
 import net.forsteri.createindustrialchemistry.entry.substancesRegister.DeferredRegisters;
-import net.forsteri.createindustrialchemistry.entry.substancesRegister.SolidSubstances;
+import net.forsteri.createindustrialchemistry.entry.substancesRegister.tileEntities.Partials;
 import net.forsteri.createindustrialchemistry.entry.substancesRegister.tileEntities.RecipeTypes;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
@@ -38,7 +39,7 @@ public class CreateIndustrialChemistry {
         DeferredRegisters.register(eventBus);
         RecipeTypes.register(eventBus);
         eventBus.addListener(this::setup);
-        // Register ourselves for server and other game events we are interested in
+        DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> Partials::register);
         MinecraftForge.EVENT_BUS.register(this);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(ColorHandlers::registerItemColors);
     }
