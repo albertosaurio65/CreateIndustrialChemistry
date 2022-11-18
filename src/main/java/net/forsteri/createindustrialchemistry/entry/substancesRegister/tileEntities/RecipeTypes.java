@@ -6,6 +6,7 @@ import com.simibubi.create.foundation.utility.Lang;
 import com.simibubi.create.foundation.utility.recipe.IRecipeTypeInfo;
 import net.forsteri.createindustrialchemistry.CreateIndustrialChemistry;
 import net.forsteri.createindustrialchemistry.substances.equipment.kineticElectrolyzer.recipe.ElectrolyzerRecipe;
+import net.forsteri.createindustrialchemistry.substances.equipment.mechanicalCooler.recipe.CoolingRecipe;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.crafting.Recipe;
@@ -20,8 +21,10 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.function.Supplier;
 
+@SuppressWarnings("unused")
 public enum RecipeTypes implements IRecipeTypeInfo {
-    ELECTROLYSIS(ElectrolyzerRecipe::new);
+    ELECTROLYSIS(ElectrolyzerRecipe::new),
+    COOLING(CoolingRecipe::new);
 
     private final ResourceLocation id;
     private final RegistryObject<RecipeSerializer<?>> serializerObject;

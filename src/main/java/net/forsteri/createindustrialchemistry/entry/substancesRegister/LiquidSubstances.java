@@ -1,11 +1,11 @@
 package net.forsteri.createindustrialchemistry.entry.substancesRegister;
 
 import net.forsteri.createindustrialchemistry.entry.creativeModeTabs.CompoundSubstanceTab;
+import net.forsteri.createindustrialchemistry.entry.creativeModeTabs.ElementarySubstanceTab;
 import net.forsteri.createindustrialchemistry.entry.creativeModeTabs.FluidTab;
 import net.forsteri.createindustrialchemistry.substances.abstracts.FlowingFluid;
-import net.forsteri.createindustrialchemistry.substances.abstracts.fluidBlockTypes.AcidicFluidBlock;
 import net.forsteri.createindustrialchemistry.substances.abstracts.fluidBlockTypes.HotFluidBlock;
-import net.forsteri.createindustrialchemistry.substances.compound.HydrochloricAcid;
+import net.forsteri.createindustrialchemistry.substances.abstracts.generals.GeneralFlowingFluid;
 import net.forsteri.createindustrialchemistry.substances.compound.MoltenSalt;
 import net.forsteri.createindustrialchemistry.substances.compound.PureWater;
 import net.forsteri.createindustrialchemistry.substances.equipment.MetalTank;
@@ -78,7 +78,7 @@ public class LiquidSubstances {
             .bucket(() -> Items.BUCKET);
 
     public static final RegistryObject<LiquidBlock> MOLTEN_SALT_BLOCK = BLOCKS.register("molten_salt",
-            () -> new HotFluidBlock(() -> LiquidSubstances.MOLTEN_SALT_SOURCE.get(), BlockBehaviour.Properties.of(Material.WATER)
+            () -> new HotFluidBlock(() -> LiquidSubstances.MOLTEN_SALT_SOURCE.get(), BlockBehaviour.Properties.of(Material.LAVA)
                     .noOcclusion()
                     .strength(100f)
                     .noDrops()));
@@ -89,6 +89,80 @@ public class LiquidSubstances {
                     new Item.Properties()
                             .stacksTo(1)
                     ,0xFFDD6612, CompoundSubstanceTab.COMPOUND_SUBSTANCE_TAB, FluidTab.FLUID_TAB));
+
+    public static final RegistryObject<FlowingFluid> MOLTEN_CARBON_SOURCE
+            = FLUIDS.register("molten_carbon", () -> new GeneralFlowingFluid.Source(
+                    LiquidSubstances.MOLTEN_CARBON_PROPERTIES, () -> LiquidSubstances.MOLTEN_CARBON_TANK.get())
+    );
+
+    public static final RegistryObject<FlowingFluid> MOLTEN_CARBON_FLOWING
+            = FLUIDS.register("molten_carbon_flowing", () -> new GeneralFlowingFluid.Flowing(
+                    LiquidSubstances.MOLTEN_CARBON_PROPERTIES, () -> LiquidSubstances.MOLTEN_CARBON_TANK.get()
+    ));
+
+    public static final ForgeFlowingFluid.Properties MOLTEN_CARBON_PROPERTIES = new ForgeFlowingFluid.Properties(
+            () -> LiquidSubstances.MOLTEN_CARBON_SOURCE.get(), () -> LiquidSubstances.MOLTEN_CARBON_FLOWING.get(),
+            FluidAttributes.builder(WATER_STILL_RL, WATER_FLOWING_RL)
+                    .density(10)
+                    .luminosity(0)
+                    .viscosity(0)
+                    .sound(SoundEvents.BUCKET_FILL)
+                    .color(0xFFDD6612)
+    )
+            .slopeFindDistance(2)
+            .levelDecreasePerBlock(2)
+            .block(() -> LiquidSubstances.MOLTEN_CARBON_BLOCK.get())
+            .bucket(() -> Items.BUCKET);
+
+    public static final RegistryObject<LiquidBlock> MOLTEN_CARBON_BLOCK = BLOCKS.register("molten_carbon",
+            () -> new HotFluidBlock(() -> LiquidSubstances.MOLTEN_CARBON_SOURCE.get(), BlockBehaviour.Properties.of(Material.LAVA)
+                    .noOcclusion()
+                    .strength(100f)
+                    .noDrops()));
+
+    public static final RegistryObject<Item> MOLTEN_CARBON_TANK = ITEMS.register("molten_carbon_tank",
+            () -> new MetalTank(
+                    LiquidSubstances.MOLTEN_CARBON_SOURCE,
+                    new Item.Properties()
+                            .stacksTo(1)
+                    ,0xFFDD6612, ElementarySubstanceTab.ELEMENTARY_SUBSTANCE_TAB, FluidTab.FLUID_TAB));
+
+    public static final RegistryObject<FlowingFluid> MOLTEN_SILICON_SOURCE
+            = FLUIDS.register("molten_silicon", () -> new GeneralFlowingFluid.Source(
+            LiquidSubstances.MOLTEN_SILICON_PROPERTIES, () -> LiquidSubstances.MOLTEN_SILICON_TANK.get())
+    );
+
+    public static final RegistryObject<FlowingFluid> MOLTEN_SILICON_FLOWING
+            = FLUIDS.register("molten_silicon_flowing", () -> new GeneralFlowingFluid.Flowing(
+            LiquidSubstances.MOLTEN_SILICON_PROPERTIES, () -> LiquidSubstances.MOLTEN_SILICON_TANK.get()
+    ));
+
+    public static final ForgeFlowingFluid.Properties MOLTEN_SILICON_PROPERTIES = new ForgeFlowingFluid.Properties(
+            () -> LiquidSubstances.MOLTEN_SILICON_SOURCE.get(), () -> LiquidSubstances.MOLTEN_SILICON_FLOWING.get(),
+            FluidAttributes.builder(WATER_STILL_RL, WATER_FLOWING_RL)
+                    .density(10)
+                    .luminosity(0)
+                    .viscosity(0)
+                    .sound(SoundEvents.BUCKET_FILL)
+                    .color(0xFFDD6612)
+    )
+            .slopeFindDistance(2)
+            .levelDecreasePerBlock(2)
+            .block(() -> LiquidSubstances.MOLTEN_SILICON_BLOCK.get())
+            .bucket(() -> Items.BUCKET);
+
+    public static final RegistryObject<LiquidBlock> MOLTEN_SILICON_BLOCK = BLOCKS.register("molten_silicon",
+            () -> new HotFluidBlock(() -> LiquidSubstances.MOLTEN_SILICON_SOURCE.get(), BlockBehaviour.Properties.of(Material.LAVA)
+                    .noOcclusion()
+                    .strength(100f)
+                    .noDrops()));
+
+    public static final RegistryObject<Item> MOLTEN_SILICON_TANK = ITEMS.register("molten_silicon_tank",
+            () -> new MetalTank(
+                    LiquidSubstances.MOLTEN_SILICON_SOURCE,
+                    new Item.Properties()
+                            .stacksTo(1)
+                    ,0xFFDD6612, ElementarySubstanceTab.ELEMENTARY_SUBSTANCE_TAB, FluidTab.FLUID_TAB));
 
 
 

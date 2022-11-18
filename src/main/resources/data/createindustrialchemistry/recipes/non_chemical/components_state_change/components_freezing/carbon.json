@@ -1,0 +1,14 @@
+{
+  "type": "createindustrialchemistry:cooling",
+  "ingredients": [
+    {
+      "fluid": "createindustrialchemistry:molten_carbon",
+      "amount": 100
+    }
+  ],
+  "results": [
+    {
+      "item": "createindustrialchemistry:graphite"
+    }
+  ]
+}

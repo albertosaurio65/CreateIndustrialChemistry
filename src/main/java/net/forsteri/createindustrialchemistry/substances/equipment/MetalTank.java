@@ -2,7 +2,7 @@ package net.forsteri.createindustrialchemistry.substances.equipment;
 
 import net.forsteri.createindustrialchemistry.entry.substancesRegister.Equipments;
 import net.forsteri.createindustrialchemistry.substances.abstracts.FlowingFluid;
-import net.forsteri.createindustrialchemistry.substances.utilities.fluids.TankPickup;
+import net.forsteri.createindustrialchemistry.substances.utility.fluids.TankPickup;
 import net.forsteri.createindustrialchemistry.utility.ChemUtil;
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.advancements.CriteriaTriggers;
@@ -33,7 +33,7 @@ import java.util.Collection;
 import java.util.List;
 
 
-@SuppressWarnings("deprecation")
+@SuppressWarnings({"deprecation", "unused"})
 @MethodsReturnNonnullByDefault
 @ParametersAreNonnullByDefault
 public class MetalTank extends BucketItem {

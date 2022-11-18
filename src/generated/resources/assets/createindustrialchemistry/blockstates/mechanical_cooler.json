@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "createindustrialchemistry:block/mechanical_cooler/block"
+    }
+  }
+}

@@ -1,18 +1,13 @@
 package net.forsteri.createindustrialchemistry.substances.abstracts;
 
-import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Lists;
-import net.forsteri.createindustrialchemistry.substances.utilities.fluids.TankPickup;
+import net.forsteri.createindustrialchemistry.substances.utility.fluids.TankPickup;
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.sounds.SoundEvent;
-import net.minecraft.tags.FluidTags;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -26,13 +21,11 @@ import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
-import net.forsteri.createindustrialchemistry.substances.abstracts.FlowingFluid;
 import net.minecraftforge.fluids.ForgeFlowingFluid;
 
 import javax.annotation.ParametersAreNonnullByDefault;
 import java.util.Collections;
 import java.util.List;
-import java.util.Optional;
 import java.util.Random;
 
 @SuppressWarnings({"DeprecatedIsStillUsed", "deprecation"})
@@ -43,8 +36,6 @@ public class FluidBlock extends LiquidBlock implements TankPickup {
     @Deprecated // Use getFluid
     private final net.minecraft.world.level.material.FlowingFluid fluid;
     private final List<FluidState> stateCache;
-    public static final VoxelShape STABLE_SHAPE = Block.box(0.0D, 0.0D, 0.0D, 16.0D, 8.0D, 16.0D);
-    public static final ImmutableList<Direction> POSSIBLE_FLOW_DIRECTIONS = ImmutableList.of(Direction.DOWN, Direction.SOUTH, Direction.NORTH, Direction.EAST, Direction.WEST);
 
     @Deprecated  // Forge: Use the constructor that takes a supplier
     public FluidBlock(net.minecraft.world.level.material.FlowingFluid pFluid, BlockBehaviour.Properties pProperties) {
@@ -125,10 +116,6 @@ public class FluidBlock extends LiquidBlock implements TankPickup {
      * returns its solidified counterpart.
      * Note that this method should ideally consider only the specific direction passed in.
      */
-
-    private void fizz(LevelAccessor pLevel, BlockPos pPos) {
-        pLevel.levelEvent(1501, pPos, 0);
-    }
 
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> pBuilder) {
         pBuilder.add(LEVEL);

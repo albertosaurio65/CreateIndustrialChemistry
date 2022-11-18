@@ -1,0 +1,14 @@
+{
+  "type": "createindustrialchemistry:cooling",
+  "ingredients": [
+    {
+      "fluid": "createindustrialchemistry:molten_silicon",
+      "amount": 100
+    }
+  ],
+  "results": [
+    {
+      "item": "createindustrialchemistry:silicon"
+    }
+  ]
+}

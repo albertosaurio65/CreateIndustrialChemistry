@@ -1,5 +1,5 @@
 {
-  "type": "create:mixing",
+  "type": "createindustrialchemistry:cooling",
   "ingredients": [
     {
       "fluid": "createindustrialchemistry:water_vapor",
