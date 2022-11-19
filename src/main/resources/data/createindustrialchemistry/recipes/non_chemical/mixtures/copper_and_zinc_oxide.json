@@ -1,0 +1,17 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "tag": "forge:dusts/copper"
+    },
+    {
+      "item": "createindustrialchemistry:zinc_oxide"
+    }
+  ],
+  "results": [
+    {
+      "item": "createindustrialchemistry:copper_zinc_oxide",
+      "count": 2
+    }
+  ]
+}

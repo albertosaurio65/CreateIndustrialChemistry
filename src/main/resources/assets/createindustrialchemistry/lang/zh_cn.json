@@ -12,6 +12,12 @@
   "item.createindustrialchemistry.silicon" : "硅",
   "iupac.createindustrialchemistry.silicon" : "硅",
   "formula.createindustrialchemistry.silicon" : "Si",
+  "item.createindustrialchemistry.zinc_dusts" : "锌粉",
+  "iupac.createindustrialchemistry.zinc_dusts" : "锌",
+  "formula.createindustrialchemistry.zinc_dusts" : "Zn",
+  "item.createindustrialchemistry.copper_dusts" : "铜粉",
+  "iupac.createindustrialchemistry.copper_dusts" : "铜",
+  "formula.createindustrialchemistry.copper_dusts" : "Cu",
 
   "itemGroup.compound_substance_tab": "机械动力: 工业化学 | 化合物",
   "item.createindustrialchemistry.sodium_hydroxide": "氢氧化钠",
@@ -47,6 +53,9 @@
   "item.createindustrialchemistry.calcium_hydroxide" : "熟石灰",
   "iupac.createindustrialchemistry.calcium_hydroxide" : "氢氧化钙",
   "formula.createindustrialchemistry.calcium_hydroxide" : "Ca(OH)2",
+  "item.createindustrialchemistry.zinc_oxide" : "氧化锌",
+  "iupac.createindustrialchemistry.zinc_oxide" : "氧化锌",
+  "formula.createindustrialchemistry.zinc_oxide" : "ZnO",
 
   "itemGroup.fluid_tab" : "机械动力: 工业化学 | 流体",
   "fluid.createindustrialchemistry.hydrogen": "氢气",
@@ -97,6 +106,10 @@
   "item.createindustrialchemistry.molten_silicon_tank" : "熔融硅罐",
   "iupac.createindustrialchemistry.molten_silicon_tank" : "熔融硅",
   "formula.createindustrialchemistry.molten_silicon_tank" : "Si(l)",
+  "fluid.createindustrialchemistry.methanol": "甲醇",
+  "item.createindustrialchemistry.methanol_tank" : "甲醇罐",
+  "iupac.createindustrialchemistry.methanol_tank" : "甲醇",
+  "formula.createindustrialchemistry.methanol_tank" : "CH3OH",
 
   "block.createindustrialchemistry.acidic_sand": "含酸的沙子",
   "block.createindustrialchemistry.purified_sand": "纯沙",
@@ -113,9 +126,13 @@
   "create.recipe.cooling": "降温",
   "block.createindustrialchemistry.mechanical_cooler": "动力降温器",
 
+  "itemGroup.mixture_tab" : "机械动力: 工业化学 | 混合物",
+  "item.createindustrialchemistry.copper_zinc_oxide" : "铜-氧化锌催化剂",
+  "iupac.createindustrialchemistry.copper_zinc_oxide" : "铜-氧化锌",
+  "formula.createindustrialchemistry.copper_zinc_oxide" : "Cu+ZnO",
+
   "itemGroup.alkali_substance_tab": "机械动力: 工业化学 | 碱性物质",
   "itemGroup.aqueous_solution_tab" : "机械动力: 工业化学 | 水溶液",
-  "itemGroup.mixture_tab" : "机械动力: 工业化学 | 混合物",
 
   "iupac.createindustrialchemistry.format": "中文化学命名法名: %1$s",
   "formula.createindustrialchemistry.format": "化学式: %1$s",

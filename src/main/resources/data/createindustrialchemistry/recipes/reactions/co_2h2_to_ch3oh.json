@@ -1,0 +1,26 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "fluid": "createindustrialchemistry:carbon_monoxide",
+      "amount": 250
+    },
+    {
+      "fluid": "createindustrialchemistry:hydrogen",
+      "amount": 500
+    },
+    {
+      "item": "createindustrialchemistry:copper_zinc_oxide"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "createindustrialchemistry:methanol",
+      "amount": 250
+    },
+    {
+      "item": "createindustrialchemistry:copper_zinc_oxide"
+    }
+  ],
+  "heatRequirement": "superheated"
+}

@@ -164,6 +164,43 @@ public class LiquidSubstances {
                             .stacksTo(1)
                     ,0xFFDD6612, ElementarySubstanceTab.ELEMENTARY_SUBSTANCE_TAB, FluidTab.FLUID_TAB));
 
+    public static final RegistryObject<FlowingFluid> METHANOL_SOURCE
+            = FLUIDS.register("methanol", () -> new GeneralFlowingFluid.Source(
+            LiquidSubstances.METHANOL_PROPERTIES, () -> LiquidSubstances.METHANOL_TANK.get())
+    );
+
+    public static final RegistryObject<FlowingFluid> METHANOL_FLOWING
+            = FLUIDS.register("methanol_flowing", () -> new GeneralFlowingFluid.Flowing(
+            LiquidSubstances.METHANOL_PROPERTIES, () -> LiquidSubstances.METHANOL_TANK.get()
+    ));
+
+    public static final ForgeFlowingFluid.Properties METHANOL_PROPERTIES = new ForgeFlowingFluid.Properties(
+            () -> LiquidSubstances.METHANOL_SOURCE.get(), () -> LiquidSubstances.METHANOL_FLOWING.get(),
+            FluidAttributes.builder(WATER_STILL_RL, WATER_FLOWING_RL)
+                    .density(10)
+                    .luminosity(0)
+                    .viscosity(0)
+                    .sound(SoundEvents.BUCKET_FILL)
+                    .color(0xFFFFFFFF)
+    )
+            .slopeFindDistance(2)
+            .levelDecreasePerBlock(2)
+            .block(() -> LiquidSubstances.METHANOL_BLOCK.get())
+            .bucket(() -> Items.BUCKET);
+
+    public static final RegistryObject<LiquidBlock> METHANOL_BLOCK = BLOCKS.register("methanol",
+            () -> new FluidBlock(() -> LiquidSubstances.METHANOL_SOURCE.get(), BlockBehaviour.Properties.of(Material.LAVA)
+                    .noOcclusion()
+                    .strength(100f)
+                    .noDrops()));
+
+    public static final RegistryObject<Item> METHANOL_TANK = ITEMS.register("methanol_tank",
+            () -> new MetalTank(
+                    LiquidSubstances.METHANOL_SOURCE,
+                    new Item.Properties()
+                            .stacksTo(1)
+                    ,0xFFFFFFFF, CompoundSubstanceTab.COMPOUND_SUBSTANCE_TAB, FluidTab.FLUID_TAB));
+
 
 
     public static void register(){}

@@ -59,4 +59,13 @@ public class SolidSubstances {
 
     public static final RegistryObject<Item> CALCIUM_HYDROXIDE = ITEMS.register("calcium_hydroxide",
             () -> new ChemicalSubstance(new Item.Properties(), CompoundSubstanceTab.COMPOUND_SUBSTANCE_TAB));
+
+    public static final RegistryObject<Item> ZINC_DUSTS = ITEMS.register("zinc_dusts",
+            () -> new ChemicalSubstance(new Item.Properties(), ElementarySubstanceTab.ELEMENTARY_SUBSTANCE_TAB));
+
+    public static final RegistryObject<Item> COPPER_DUSTS = ITEMS.register("copper_dusts",
+            () -> new ChemicalSubstance(new Item.Properties(), ElementarySubstanceTab.ELEMENTARY_SUBSTANCE_TAB));
+
+    public static final RegistryObject<Item> ZINC_OXIDE = ITEMS.register("zinc_oxide",
+            () -> new ChemicalSubstance(new Item.Properties(), CompoundSubstanceTab.COMPOUND_SUBSTANCE_TAB));
 }

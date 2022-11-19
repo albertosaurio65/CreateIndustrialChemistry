@@ -12,6 +12,12 @@
   "item.createindustrialchemistry.silicon" : "Silicon",
   "iupac.createindustrialchemistry.silicon" : "Silicon",
   "formula.createindustrialchemistry.silicon" : "Si",
+  "item.createindustrialchemistry.zinc_dusts" : "Zinc Dusts",
+  "iupac.createindustrialchemistry.zinc_dusts" : "Zinc",
+  "formula.createindustrialchemistry.zinc_dusts" : "Zn",
+  "item.createindustrialchemistry.copper_dusts" : "Copper Dusts",
+  "iupac.createindustrialchemistry.copper_dusts" : "Copper",
+  "formula.createindustrialchemistry.copper_dusts" : "Cu",
 
   "itemGroup.compound_substance_tab" : "Compound Substance",
   "item.createindustrialchemistry.sodium_hydroxide" : "Sodium Hydroxide",
@@ -47,6 +53,9 @@
   "item.createindustrialchemistry.calcium_hydroxide" : "Calcium Hydroxide",
   "iupac.createindustrialchemistry.calcium_hydroxide" : "Calcium hydroxide",
   "formula.createindustrialchemistry.calcium_hydroxide" : "Ca(OH)2",
+  "item.createindustrialchemistry.zinc_oxide" : "Zinc Oxide",
+  "iupac.createindustrialchemistry.zinc_oxide" : "Zinc oxide",
+  "formula.createindustrialchemistry.zinc_oxide" : "ZnO",
 
   "itemGroup.fluid_tab" : "Fluid",
   "fluid.createindustrialchemistry.hydrogen": "Hydrogen",
@@ -97,6 +106,10 @@
   "item.createindustrialchemistry.molten_silicon_tank" : "Molten Silicon Tank",
   "iupac.createindustrialchemistry.molten_silicon_tank" : "Molten silicon",
   "formula.createindustrialchemistry.molten_silicon_tank" : "Si(l)",
+  "fluid.createindustrialchemistry.methanol": "Methanol",
+  "item.createindustrialchemistry.methanol_tank" : "Methanol Tank",
+  "iupac.createindustrialchemistry.methanol_tank" : "Methanol",
+  "formula.createindustrialchemistry.methanol_tank" : "CH3OH",
 
   "block.createindustrialchemistry.acidic_sand": "Acidic Sand",
   "block.createindustrialchemistry.purified_sand": "Purified Sand",
@@ -113,9 +126,13 @@
   "create.recipe.cooling": "Cooling",
   "block.createindustrialchemistry.mechanical_cooler": "Mechanical Cooler",
 
+  "itemGroup.mixture_tab" : "Mixtures",
+  "item.createindustrialchemistry.copper_zinc_oxide" : "Copper-Zinc Oxide Catalyst",
+  "iupac.createindustrialchemistry.copper_zinc_oxide" : "Copper-Zinc Oxide",
+  "formula.createindustrialchemistry.copper_zinc_oxide" : "Cu+ZnO",
+
   "itemGroup.alkali_substance_tab" : "Alkali Substance",
   "itemGroup.aqueous_solution_tab" : "Aqueous Solutions",
-  "itemGroup.mixture_tab" : "Mixtures",
 
   "iupac.createindustrialchemistry.format": "IUPAC Name: %1$s",
   "formula.createindustrialchemistry.format": "Chemical Formula: %1$s",

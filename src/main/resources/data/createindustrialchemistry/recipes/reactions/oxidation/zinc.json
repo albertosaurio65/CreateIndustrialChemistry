@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "tag": "forge:dusts/zinc"
+  },
+  "result": "createindustrialchemistry:zinc_oxide",
+  "experience": 0.0,
+  "cookingtime": 100
+}
