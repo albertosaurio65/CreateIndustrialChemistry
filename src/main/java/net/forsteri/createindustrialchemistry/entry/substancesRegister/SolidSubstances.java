@@ -89,4 +89,7 @@ public class SolidSubstances {
 
     public static final RegistryObject<Item> LITHIUM = ITEMS.register("lithium",
             () -> new ChemicalSubstance(new Item.Properties(), ElementarySubstanceTab.ELEMENTARY_SUBSTANCE_TAB));
+
+    public static final RegistryObject<Item> LITHIUM_IODIDE = ITEMS.register("lithium_iodide",
+            () -> new ChemicalSubstance(new Item.Properties(), CompoundSubstanceTab.COMPOUND_SUBSTANCE_TAB));
 }

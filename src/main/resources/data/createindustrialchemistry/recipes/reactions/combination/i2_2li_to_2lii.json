@@ -1,0 +1,18 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "createindustrialchemistry:iodine"
+    },
+    {
+      "item": "createindustrialchemistry:lithium",
+      "count": 2
+    }
+  ],
+  "results": [
+    {
+      "item": "createindustrialchemistry:lithium_iodide"
+    }
+  ],
+  "heatRequirement": "heated"
+}

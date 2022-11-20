@@ -77,6 +77,9 @@
   "item.createindustrialchemistry.aluminium_oxide" : "氧化铝",
   "iupac.createindustrialchemistry.aluminium_oxide" : "氧化铝",
   "formula.createindustrialchemistry.aluminium_oxide" : "Al2O3",
+  "item.createindustrialchemistry.lithium_iodide" : "碘化锂",
+  "iupac.createindustrialchemistry.lithium_iodide" : "碘化锂",
+  "formula.createindustrialchemistry.lithium_iodide" : "LiI",
 
   "itemGroup.fluid_tab" : "机械动力: 工业化学 | 流体",
   "fluid.createindustrialchemistry.hydrogen": "氢气",
