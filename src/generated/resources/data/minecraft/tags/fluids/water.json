@@ -23,9 +23,13 @@
     "createindustrialchemistry:oxygen_flowing",
     "createindustrialchemistry:chlorine",
     "createindustrialchemistry:chlorine_flowing",
+    "createindustrialchemistry:hydrogen_iodide",
+    "createindustrialchemistry:hydrogen_iodide_flowing",
     "createindustrialchemistry:calcium_chloride_aqueous_solution",
     "createindustrialchemistry:calcium_chloride_aqueous_solution_flowing",
     "createindustrialchemistry:hydrochloric_acid",
-    "createindustrialchemistry:hydrochloric_acid_flowing"
+    "createindustrialchemistry:hydrochloric_acid_flowing",
+    "createindustrialchemistry:hydroiodic_acid",
+    "createindustrialchemistry:hydroiodic_acid_flowing"
   ]
 }

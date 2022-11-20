@@ -4,6 +4,7 @@ import net.forsteri.createindustrialchemistry.entry.creativeModeTabs.CompoundSub
 import net.forsteri.createindustrialchemistry.entry.creativeModeTabs.ElementarySubstanceTab;
 import net.forsteri.createindustrialchemistry.entry.creativeModeTabs.FluidTab;
 import net.forsteri.createindustrialchemistry.substances.abstracts.fluidBlockTypes.PoisonousFluidBlock;
+import net.forsteri.createindustrialchemistry.substances.abstracts.generals.GeneralRisingGas;
 import net.forsteri.createindustrialchemistry.substances.compound.CarbonDioxide;
 import net.forsteri.createindustrialchemistry.substances.compound.CarbonMonoxide;
 import net.forsteri.createindustrialchemistry.substances.compound.Steam;
@@ -228,6 +229,41 @@ public class GasSubstances {
                     new Item.Properties()
                             .stacksTo(1),
                     false ,ElementarySubstanceTab.ELEMENTARY_SUBSTANCE_TAB, FluidTab.FLUID_TAB
+            ));
+
+    public static final RegistryObject<FlowingFluid> HYDROGEN_IODIDE_SOURCE
+            = FLUIDS.register("hydrogen_iodide",
+            () -> new GeneralRisingGas.Source(GasSubstances.HYDROGEN_IODIDE_PROPERTIES, GasSubstances.HYDROGEN_IODIDE_TANK));
+
+    public static final RegistryObject<FlowingFluid> HYDROGEN_IODIDE_FLOWING
+            = FLUIDS.register("hydrogen_iodide_flowing",
+            () -> new GeneralRisingGas.Flowing(GasSubstances.HYDROGEN_PROPERTIES, GasSubstances.HYDROGEN_IODIDE_TANK));
+
+    public static final ForgeFlowingFluid.Properties HYDROGEN_IODIDE_PROPERTIES = new ForgeFlowingFluid.Properties(
+            () -> GasSubstances.HYDROGEN_IODIDE_SOURCE.get(), () -> GasSubstances.HYDROGEN_IODIDE_FLOWING.get(),
+            FluidAttributes.builder(WATER_STILL_RL, WATER_FLOWING_RL)
+                    .density(10)
+                    .luminosity(0)
+                    .viscosity(0)
+                    .sound(SoundEvents.BUCKET_FILL)
+                    .color(0xFFFFFFFF)
+                    .gaseous()
+    )
+            .slopeFindDistance(5)
+            .levelDecreasePerBlock(2)
+            .block(() -> GasSubstances.HYDROGEN_IODIDE_BLOCK.get())
+            .bucket(() -> Items.BUCKET);
+
+    public static final RegistryObject<FluidBlock> HYDROGEN_IODIDE_BLOCK = BLOCKS.register("hydrogen_iodide",
+            () -> new FluidBlock(() -> GasSubstances.HYDROGEN_IODIDE_SOURCE.get(), BlockBehaviour.Properties.of(Material.WATER)
+                    .noCollission().strength(100f).noDrops()));
+
+    public static final RegistryObject<Item> HYDROGEN_IODIDE_TANK = ITEMS.register("hydrogen_iodide_tank",
+            () -> new MetalTank(
+                    GasSubstances.HYDROGEN_IODIDE_SOURCE,
+                    new Item.Properties()
+                            .stacksTo(1),
+                    0xFFFFFFFF, CompoundSubstanceTab.COMPOUND_SUBSTANCE_TAB, FluidTab.FLUID_TAB
             ));
 
     public static void register(){}

@@ -1,0 +1,19 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "fluid": "createindustrialchemistry:distilled_water",
+      "amount": 500
+    },
+    {
+      "fluid": "createindustrialchemistry:hydrogen_iodide",
+      "amount": 500
+    }
+  ],
+  "results": [
+    {
+      "fluid": "createindustrialchemistry:hydroiodic_acid",
+      "amount": 1000
+    }
+  ]
+}

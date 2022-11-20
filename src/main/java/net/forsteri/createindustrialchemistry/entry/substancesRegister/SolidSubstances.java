@@ -68,4 +68,10 @@ public class SolidSubstances {
 
     public static final RegistryObject<Item> ZINC_OXIDE = ITEMS.register("zinc_oxide",
             () -> new ChemicalSubstance(new Item.Properties(), CompoundSubstanceTab.COMPOUND_SUBSTANCE_TAB));
+
+    public static final RegistryObject<Item> SODIUM_IODIDE = ITEMS.register("sodium_iodide",
+            () -> new ChemicalSubstance(new Item.Properties(), CompoundSubstanceTab.COMPOUND_SUBSTANCE_TAB));
+
+    public static final RegistryObject<Item> IODINE = ITEMS.register("iodine",
+            () -> new ChemicalSubstance(new Item.Properties(), ElementarySubstanceTab.ELEMENTARY_SUBSTANCE_TAB));
 }

@@ -1,0 +1,23 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "createindustrialchemistry:sodium_iodide",
+      "count": 2
+    },
+    {
+      "fluid": "createindustrialchemistry:chlorine",
+      "amount": 500
+    }
+  ],
+  "results": [
+    {
+      "item": "createindustrialchemistry:salt",
+      "count": 2
+    },
+    {
+      "item": "createindustrialchemistry:iodine",
+      "count": 1
+    }
+  ]
+}

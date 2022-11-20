@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "tag": "minecraft:dried_kelp_block"
+  },
+  "result": "createindustrialchemistry:sodium_iodide",
+  "experience": 0.0,
+  "cookingtime": 100
+}

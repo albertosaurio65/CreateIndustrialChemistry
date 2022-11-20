@@ -1,0 +1,18 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "fluid": "createindustrialchemistry:hydrogen",
+      "amount": 500
+    },
+    {
+      "item": "createindustrialchemistry:iodine"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "createindustrialchemistry:hydrogen_iodide",
+      "amount": 500
+    }
+  ]
+}
