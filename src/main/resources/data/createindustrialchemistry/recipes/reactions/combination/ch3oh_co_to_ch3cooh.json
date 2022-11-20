@@ -1,0 +1,34 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "fluid": "createindustrialchemistry:carbon_dioxide",
+      "amount": 500
+    },
+    {
+      "fluid": "createindustrialchemistry:methanol",
+      "amount": 500
+    },
+    {
+      "item": "createindustrialchemistry:lithium_iodide"
+    },
+    {
+      "fluid": "createindustrialchemistry:hydroiodic_acid",
+      "amount": 500
+    }
+  ],
+  "results": [
+    {
+      "fluid": "createindustrialchemistry:acetic_acid",
+      "amount": 500
+    },
+    {
+      "item": "createindustrialchemistry:lithium_iodide"
+    },
+    {
+      "fluid": "createindustrialchemistry:hydroiodic_acid",
+      "amount": 500
+    }
+  ],
+  "heatRequirement": "heated"
+}

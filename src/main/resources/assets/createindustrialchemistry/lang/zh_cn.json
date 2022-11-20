@@ -146,6 +146,10 @@
   "item.createindustrialchemistry.molten_lithium_chloride_tank": "熔融氯化锂罐",
   "iupac.createindustrialchemistry.molten_lithium_chloride_tank": "熔融氯化锂",
   "formula.createindustrialchemistry.molten_lithium_chloride_tank" : "LiCl(l)",
+  "fluid.createindustrialchemistry.acetic_acid": "乙酸",
+  "item.createindustrialchemistry.acetic_acid_tank" : "乙酸罐",
+  "iupac.createindustrialchemistry.acetic_acid_tank" : "乙酸",
+  "formula.createindustrialchemistry.acetic_acid_tank" : "CH3COOH",
 
   "block.createindustrialchemistry.acidic_sand": "含酸的沙子",
   "block.createindustrialchemistry.purified_sand": "纯沙",

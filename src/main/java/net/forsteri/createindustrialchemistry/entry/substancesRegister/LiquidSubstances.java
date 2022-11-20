@@ -4,6 +4,7 @@ import net.forsteri.createindustrialchemistry.entry.creativeModeTabs.CompoundSub
 import net.forsteri.createindustrialchemistry.entry.creativeModeTabs.ElementarySubstanceTab;
 import net.forsteri.createindustrialchemistry.entry.creativeModeTabs.FluidTab;
 import net.forsteri.createindustrialchemistry.substances.abstracts.FlowingFluid;
+import net.forsteri.createindustrialchemistry.substances.abstracts.fluidBlockTypes.AcidicFluidBlock;
 import net.forsteri.createindustrialchemistry.substances.abstracts.fluidBlockTypes.HotFluidBlock;
 import net.forsteri.createindustrialchemistry.substances.abstracts.generals.GeneralFlowingFluid;
 import net.forsteri.createindustrialchemistry.substances.compound.MoltenSalt;
@@ -218,7 +219,7 @@ public class LiquidSubstances {
                     .luminosity(0)
                     .viscosity(0)
                     .sound(SoundEvents.BUCKET_FILL)
-                    .color(0xFFDD6612)
+                    .color(0xFFFFFFFF)
     )
             .slopeFindDistance(2)
             .levelDecreasePerBlock(2)
@@ -236,7 +237,45 @@ public class LiquidSubstances {
                     LiquidSubstances.MOLTEN_LITHIUM_CHLORIDE_SOURCE,
                     new Item.Properties()
                             .stacksTo(1)
-                    ,0xFFDD6612, CompoundSubstanceTab.COMPOUND_SUBSTANCE_TAB, FluidTab.FLUID_TAB));
+                    ,0xFFFFFFFF, CompoundSubstanceTab.COMPOUND_SUBSTANCE_TAB, FluidTab.FLUID_TAB));
+
+    public static final RegistryObject<FlowingFluid> ACETIC_ACID_SOURCE
+            = FLUIDS.register("acetic_acid", () -> new GeneralFlowingFluid.Source(
+            LiquidSubstances.ACETIC_ACID_PROPERTIES, () -> LiquidSubstances.ACETIC_ACID_TANK.get())
+    );
+
+    public static final RegistryObject<FlowingFluid> ACETIC_ACID_FLOWING
+            = FLUIDS.register("acetic_acid_flowing", () -> new GeneralFlowingFluid.Flowing(
+            LiquidSubstances.ACETIC_ACID_PROPERTIES, () -> LiquidSubstances.ACETIC_ACID_TANK.get()
+    ));
+
+    public static final ForgeFlowingFluid.Properties ACETIC_ACID_PROPERTIES = new ForgeFlowingFluid.Properties(
+            () -> LiquidSubstances.ACETIC_ACID_SOURCE.get(), () -> LiquidSubstances.ACETIC_ACID_FLOWING.get(),
+            FluidAttributes.builder(WATER_STILL_RL, WATER_FLOWING_RL)
+                    .density(10)
+                    .luminosity(0)
+                    .viscosity(0)
+                    .sound(SoundEvents.BUCKET_FILL)
+                    .color(0xFFFFFFFF)
+    )
+            .slopeFindDistance(2)
+            .levelDecreasePerBlock(2)
+            .block(() -> LiquidSubstances.ACETIC_ACID_BLOCK.get())
+            .bucket(() -> Items.BUCKET);
+
+    public static final RegistryObject<LiquidBlock> ACETIC_ACID_BLOCK = BLOCKS.register("acetic_acid",
+            () -> new AcidicFluidBlock(() -> LiquidSubstances.ACETIC_ACID_SOURCE.get(), BlockBehaviour.Properties.of(Material.LAVA)
+                    .noOcclusion()
+                    .strength(100f)
+                    .noDrops(), 0.5f));
+
+
+    public static final RegistryObject<Item> ACETIC_ACID_TANK = ITEMS.register("acetic_acid_tank",
+            () -> new MetalTank(
+                    LiquidSubstances.ACETIC_ACID_SOURCE,
+                    new Item.Properties()
+                            .stacksTo(1)
+                    ,0xFFFFFFFF, CompoundSubstanceTab.COMPOUND_SUBSTANCE_TAB, FluidTab.FLUID_TAB));
 
 
 
