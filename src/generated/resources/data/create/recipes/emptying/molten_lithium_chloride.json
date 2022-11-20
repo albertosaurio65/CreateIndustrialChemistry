@@ -1,0 +1,17 @@
+{
+  "type": "create:emptying",
+  "ingredients": [
+    {
+      "item": "createindustrialchemistry:molten_lithium_chloride_tank"
+    }
+  ],
+  "results": [
+    {
+      "item": "createindustrialchemistry:empty_metal_tank"
+    },
+    {
+      "fluid": "createindustrialchemistry:molten_lithium_chloride",
+      "amount": 1000
+    }
+  ]
+}

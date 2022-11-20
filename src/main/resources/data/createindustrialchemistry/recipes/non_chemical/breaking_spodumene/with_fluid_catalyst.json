@@ -1,0 +1,17 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "fluidTag": "createindustrialchemistry:catalyst_for/breaking_spodumene",
+      "amount": 500
+    },
+    {
+      "item": "createindustrialchemistry:spodumene"
+    }
+  ],
+  "results": [
+    {
+      "item": "createindustrialchemistry:spodumene_dusts"
+    }
+  ]
+}

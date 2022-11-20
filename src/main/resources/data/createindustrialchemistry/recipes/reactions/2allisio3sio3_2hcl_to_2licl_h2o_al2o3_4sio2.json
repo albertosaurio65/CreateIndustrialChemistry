@@ -1,0 +1,32 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "createindustrialchemistry:spodumene_dusts",
+      "count": 2
+    },
+    {
+      "fluid": "createindustrialchemistry:hydrochloric_acid",
+      "amount": 50
+    }
+  ],
+  "results": [
+    {
+      "item": "createindustrialchemistry:lithium_chloride",
+      "count": 2
+    },
+    {
+      "fluid": "createindustrialchemistry:distilled_water",
+      "amount": 50
+    },
+    {
+      "item": "createindustrialchemistry:aluminium_oxide",
+      "count": 1
+    },
+    {
+      "item": "createindustrialchemistry:silicon_dioxide",
+      "count": 4
+    }
+  ],
+  "heatRequirement": "heated"
+}

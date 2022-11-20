@@ -1,0 +1,19 @@
+{
+  "type": "createindustrialchemistry:electrolysis",
+  "ingredients": [
+    {
+      "fluid": "createindustrialchemistry:molten_lithium_chloride",
+      "amount": 500
+    }
+  ],
+  "results": [
+    {
+      "fluid": "createindustrialchemistry:chlorine",
+      "amount": 250
+    },
+    {
+      "item": "createindustrialchemistry:lithium",
+      "count": 5
+    }
+  ]
+}

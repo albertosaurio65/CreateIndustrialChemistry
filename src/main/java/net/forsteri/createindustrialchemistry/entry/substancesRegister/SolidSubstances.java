@@ -74,4 +74,19 @@ public class SolidSubstances {
 
     public static final RegistryObject<Item> IODINE = ITEMS.register("iodine",
             () -> new ChemicalSubstance(new Item.Properties(), ElementarySubstanceTab.ELEMENTARY_SUBSTANCE_TAB));
+
+    public static final RegistryObject<Item> SPODUMENE = ITEMS.register("spodumene",
+            () -> new ChemicalSubstance(new Item.Properties(), CompoundSubstanceTab.COMPOUND_SUBSTANCE_TAB));
+
+    public static final RegistryObject<Item> SPODUMENE_DUSTS = ITEMS.register("spodumene_dusts",
+            () -> new ChemicalSubstance(new Item.Properties(), CompoundSubstanceTab.COMPOUND_SUBSTANCE_TAB));
+
+    public static final RegistryObject<Item> LITHIUM_CHLORIDE = ITEMS.register("lithium_chloride",
+            () -> new ChemicalSubstance(new Item.Properties(), CompoundSubstanceTab.COMPOUND_SUBSTANCE_TAB));
+
+    public static final RegistryObject<Item> ALUMINIUM_OXIDE = ITEMS.register("aluminium_oxide",
+            () -> new ChemicalSubstance(new Item.Properties(), CompoundSubstanceTab.COMPOUND_SUBSTANCE_TAB));
+
+    public static final RegistryObject<Item> LITHIUM = ITEMS.register("lithium",
+            () -> new ChemicalSubstance(new Item.Properties(), ElementarySubstanceTab.ELEMENTARY_SUBSTANCE_TAB));
 }
