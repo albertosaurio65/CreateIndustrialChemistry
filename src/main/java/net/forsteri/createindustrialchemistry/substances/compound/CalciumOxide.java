@@ -37,6 +37,6 @@ public class CalciumOxide extends ChemicalSubstance implements ExplodeInFluid {
         entity.level.setBlock(new BlockPos(
                 Math.floor(entity.getX()),
                 Math.floor(entity.getY()),
-                Math.floor(entity.getZ())), GasSubstances.WATER_VAPOR_BLOCK.get().defaultBlockState(),3);
+                Math.floor(entity.getZ())), GasSubstances.WATER_VAPOR.BLOCK.get().defaultBlockState(),3);
     }
 }

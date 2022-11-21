@@ -5,14 +5,14 @@
       "item": "createindustrialchemistry:empty_metal_tank"
     },
     {
-      "fluid": "createindustrialchemistry:calcium_chloride_aqueous_solution",
+      "fluid": "createindustrialchemistry:calcium_chloride",
       "nbt": {},
       "amount": 1000
     }
   ],
   "results": [
     {
-      "item": "createindustrialchemistry:calcium_chloride_aqueous_solution_tank"
+      "item": "createindustrialchemistry:calcium_chloride_tank"
     }
   ]
 }

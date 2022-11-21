@@ -32,6 +32,8 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
 
+import static net.forsteri.createindustrialchemistry.entry.CreativeModeTabs.*;
+
 
 @SuppressWarnings({"deprecation", "unused"})
 @MethodsReturnNonnullByDefault
@@ -55,6 +57,7 @@ public class MetalTank extends BucketItem {
         this.color = 0xFFFFFF;
         this.genModel = true;
         this.creativeModeTabs.add(CreativeModeTab.TAB_SEARCH);
+        this.creativeModeTabs.add(FLUID_TAB);
     }
 
     public MetalTank(java.util.function.Supplier<? extends Fluid> supplier, Item.Properties builder, boolean genModel,CreativeModeTab... creativeModeTabs) {
@@ -67,6 +70,7 @@ public class MetalTank extends BucketItem {
         this.color = 0xFFFFFF;
         this.genModel = genModel;
         this.creativeModeTabs.add(CreativeModeTab.TAB_SEARCH);
+        this.creativeModeTabs.add(FLUID_TAB);
     }
 
     public MetalTank(java.util.function.Supplier<? extends Fluid> supplier, Item.Properties builder, int color, CreativeModeTab... creativeModeTabs) {
@@ -79,6 +83,7 @@ public class MetalTank extends BucketItem {
         );
         this.color = color;
         this.creativeModeTabs.add(CreativeModeTab.TAB_SEARCH);
+        this.creativeModeTabs.add(FLUID_TAB);
     }
 
     public MetalTank(java.util.function.Supplier<? extends Fluid> supplier, Item.Properties builder, int color, boolean genModel,CreativeModeTab... creativeModeTabs) {
@@ -91,6 +96,7 @@ public class MetalTank extends BucketItem {
         );
         this.color = color;
         this.creativeModeTabs.add(CreativeModeTab.TAB_SEARCH);
+        this.creativeModeTabs.add(FLUID_TAB);
     }
 
     public MetalTank(Fluid pContent, Item.Properties pProperties, CreativeModeTab... creativeModeTabs) {

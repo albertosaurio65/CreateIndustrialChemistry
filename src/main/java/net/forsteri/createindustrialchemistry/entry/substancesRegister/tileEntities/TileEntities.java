@@ -3,7 +3,6 @@ package net.forsteri.createindustrialchemistry.entry.substancesRegister.tileEnti
 import com.simibubi.create.foundation.data.CreateRegistrate;
 import com.tterrag.registrate.util.entry.BlockEntityEntry;
 import net.forsteri.createindustrialchemistry.CreateIndustrialChemistry;
-import net.forsteri.createindustrialchemistry.entry.creativeModeTabs.EquipmentTab;
 import net.forsteri.createindustrialchemistry.substances.equipment.kineticElectrolyzer.KineticElectrolyzerInstance;
 import net.forsteri.createindustrialchemistry.substances.equipment.kineticElectrolyzer.KineticElectrolyzerRenderer;
 import net.forsteri.createindustrialchemistry.substances.equipment.kineticElectrolyzer.KineticElectrolyzerTileEntity;
@@ -11,13 +10,15 @@ import net.forsteri.createindustrialchemistry.substances.equipment.mechanicalCoo
 import net.forsteri.createindustrialchemistry.substances.equipment.mechanicalCooler.MechanicalCoolerRenderer;
 import net.forsteri.createindustrialchemistry.substances.equipment.mechanicalCooler.MechanicalCoolerTileEntity;
 
+import static net.forsteri.createindustrialchemistry.entry.CreativeModeTabs.*;
+
 public class TileEntities {
     public static void register(){}
 
     private static final CreateRegistrate REGISTRATE = CreateIndustrialChemistry
             .registrate()
             .creativeModeTab(
-                    () -> EquipmentTab.EQUIPMENT_TAB
+                    () -> EQUIPMENT_TAB
             );
 
     public static final BlockEntityEntry<KineticElectrolyzerTileEntity> KINETIC_ELECTROLYZER_TILE_ENTITY = REGISTRATE

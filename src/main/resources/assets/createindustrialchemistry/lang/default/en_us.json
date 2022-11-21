@@ -148,7 +148,7 @@
   "formula.createindustrialchemistry.molten_lithium_chloride_tank" : "LiCl(l)",
   "fluid.createindustrialchemistry.acetic_acid": "Acetic Acid",
   "item.createindustrialchemistry.acetic_acid_tank" : "Acetic Acid Tank",
-  "iupac.createindustrialchemistry.acetic_acid_tank" : "Acetic acid",
+  "iupac.createindustrialchemistry.acetic_acid_tank" : "Ethanoic acid",
   "formula.createindustrialchemistry.acetic_acid_tank" : "CH3COOH",
 
   "block.createindustrialchemistry.acidic_sand": "Acidic Sand",

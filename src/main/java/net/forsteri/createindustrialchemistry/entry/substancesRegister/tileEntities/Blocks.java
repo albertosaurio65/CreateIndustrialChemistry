@@ -7,17 +7,18 @@ import com.simibubi.create.foundation.data.CreateRegistrate;
 import com.simibubi.create.foundation.data.SharedProperties;
 import com.tterrag.registrate.util.entry.BlockEntry;
 import net.forsteri.createindustrialchemistry.CreateIndustrialChemistry;
-import net.forsteri.createindustrialchemistry.entry.creativeModeTabs.EquipmentTab;
 import net.forsteri.createindustrialchemistry.substances.equipment.kineticElectrolyzer.KineticElectrolyzerBlock;
 import net.forsteri.createindustrialchemistry.substances.equipment.kineticElectrolyzer.KineticElectrolyzerBlockItem;
 import net.forsteri.createindustrialchemistry.substances.equipment.mechanicalCooler.MechanicalCoolerBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
+import static net.forsteri.createindustrialchemistry.entry.CreativeModeTabs.*;
+
 public class Blocks {
     private static final CreateRegistrate REGISTRATE = CreateIndustrialChemistry
             .registrate()
             .creativeModeTab(
-                    () -> EquipmentTab.EQUIPMENT_TAB);
+                    () -> EQUIPMENT_TAB);
 
     public static final BlockEntry<KineticElectrolyzerBlock> KINETIC_ELECTROLYZER_BLOCK = REGISTRATE.block("kinetic_electrolyzer", KineticElectrolyzerBlock::new)
             .initialProperties(SharedProperties::softMetal)
