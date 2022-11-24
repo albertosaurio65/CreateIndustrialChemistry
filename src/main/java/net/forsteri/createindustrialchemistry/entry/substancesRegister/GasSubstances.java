@@ -17,7 +17,7 @@ public class GasSubstances {
             "water_vapor", true, 0xFFFFFFFF, COMPOUND_SUBSTANCE_TAB);
 
     public static final Registers.Fluids CARBON_MONOXIDE = new Registers.Fluids(
-            "carbon_monoxide", true, 0xFFFFFFFF, COMPOUND_SUBSTANCE_TAB);
+            "carbon_monoxide", true, 0xFFFFFFFF, Registers.Fluids.FluidBlockGens::poisonous, COMPOUND_SUBSTANCE_TAB);
 
     public static final Registers.Fluids OXYGEN = new Registers.Fluids(
             "oxygen", true, 0x8887CEEB, ELEMENTARY_SUBSTANCE_TAB);

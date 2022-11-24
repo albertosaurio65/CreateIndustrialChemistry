@@ -1,0 +1,19 @@
+{
+  "type": "createindustrialchemistry:electrolysis",
+  "ingredients": [
+    {
+      "fluid": "createindustrialchemistry:molten_aluminium_oxide",
+      "amount": 500
+    }
+  ],
+  "results": [
+    {
+      "fluid": "createindustrialchemistry:molten_aluminium",
+      "amount": 200
+    },
+    {
+      "fluid": "createindustrialchemistry:oxygen",
+      "amount": 300
+    }
+  ]
+}

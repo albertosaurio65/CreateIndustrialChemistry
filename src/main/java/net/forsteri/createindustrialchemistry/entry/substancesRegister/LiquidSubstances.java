@@ -28,5 +28,11 @@ public class LiquidSubstances {
 
     public static final Fluids MOLTEN_LITHIUM_CHLORIDE = new Registers.Fluids(
             "molten_lithium_chloride", false, 0xFFFFFFFF, Fluids.FluidBlockGens::hot, COMPOUND_SUBSTANCE_TAB);
+
+    public static final Fluids MOLTEN_ALUMINIUM_OXIDE = new Registers.Fluids(
+            "molten_aluminium_oxide", false, 0xFFDD6612, Fluids.FluidBlockGens::hot, COMPOUND_SUBSTANCE_TAB);
+
+    public static final Fluids MOLTEN_ALUMINIUM = new Registers.Fluids(
+            "molten_aluminium", false, 0xFFDD6612, Fluids.FluidBlockGens::hot, ELEMENTARY_SUBSTANCE_TAB);
     public static void register(){}
 }

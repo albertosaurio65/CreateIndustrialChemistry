@@ -1,6 +1,5 @@
 package net.forsteri.createindustrialchemistry.substances.abstracts.fluidBlockTypes;
 
-import net.forsteri.createindustrialchemistry.CreateIndustrialChemistry;
 import net.forsteri.createindustrialchemistry.substances.abstracts.FluidBlock;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.damagesource.DamageSource;
@@ -12,7 +11,6 @@ import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.FlowingFluid;
-import net.minecraftforge.eventbus.EventBus;
 
 import javax.annotation.ParametersAreNonnullByDefault;
 import java.util.Objects;
@@ -44,7 +42,9 @@ public class AcidicFluidBlock extends FluidBlock {
                 amount = Objects.requireNonNull(attribute.getModifier(MODIFIER_ID)).getAmount();
             }
             attribute.removeModifier(MODIFIER_ID);
-            attribute.addPermanentModifier(new AttributeModifier(MODIFIER_ID, "acid", amount-(7+this.pH)/100, AttributeModifier.Operation.ADDITION));
+            if(this.pH < 2 || this.pH > 10) {
+                attribute.addPermanentModifier(new AttributeModifier(MODIFIER_ID, "acid", amount - (7 + (this.pH > 0 ? this.pH : -this.pH)) / 100, AttributeModifier.Operation.ADDITION));
+            }
         }
         super.entityInside(pState, pLevel, pPos, pEntity);
     }

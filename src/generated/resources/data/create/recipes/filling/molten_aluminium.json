@@ -5,14 +5,14 @@
       "item": "createindustrialchemistry:empty_metal_tank"
     },
     {
-      "fluid": "createindustrialchemistry:calcium_chloride",
+      "fluid": "createindustrialchemistry:molten_aluminium",
       "nbt": {},
       "amount": 1000
     }
   ],
   "results": [
     {
-      "item": "createindustrialchemistry:calcium_chloride_tank"
+      "item": "createindustrialchemistry:molten_aluminium_tank"
     }
   ]
 }

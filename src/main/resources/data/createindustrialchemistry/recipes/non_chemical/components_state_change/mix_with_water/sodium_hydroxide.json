@@ -1,0 +1,18 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "fluid": "createindustrialchemistry:distilled_water",
+      "amount": 500
+    },
+    {
+      "item": "createindustrialchemistry:sodium_hydroxide"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "createindustrialchemistry:sodium_hydroxide_aqueous_solution",
+      "amount": 555
+    }
+  ]
+}

@@ -1,8 +1,10 @@
 package net.forsteri.createindustrialchemistry.utility;
 
+import net.forsteri.createindustrialchemistry.substances.abstracts.ChemicalSubstance;
 import net.forsteri.createindustrialchemistry.substances.abstracts.FluidBlock;
 import net.forsteri.createindustrialchemistry.substances.abstracts.fluidBlockTypes.AcidicFluidBlock;
 import net.forsteri.createindustrialchemistry.substances.abstracts.fluidBlockTypes.HotFluidBlock;
+import net.forsteri.createindustrialchemistry.substances.abstracts.fluidBlockTypes.PoisonousFluidBlock;
 import net.forsteri.createindustrialchemistry.substances.abstracts.generals.GeneralFlowingFluid;
 import net.forsteri.createindustrialchemistry.substances.abstracts.generals.GeneralRisingGas;
 import net.forsteri.createindustrialchemistry.substances.equipment.MetalTank;
@@ -20,6 +22,8 @@ import net.minecraftforge.registries.RegistryObject;
 
 import java.util.function.Function;
 
+import static net.forsteri.createindustrialchemistry.entry.CreativeModeTabs.COMPOUND_SUBSTANCE_TAB;
+import static net.forsteri.createindustrialchemistry.entry.CreativeModeTabs.ELEMENTARY_SUBSTANCE_TAB;
 import static net.forsteri.createindustrialchemistry.entry.substancesRegister.DeferredRegisters.*;
 
 public class Registers {
@@ -89,7 +93,30 @@ public class Registers {
                         .strength(100f)
                         .noDrops(), pH);
             }
+
+            public static Function<Fluids, FluidBlock> basic(float pH){
+                return acidic(pH);
+            }
+
+            public static FluidBlock poisonous(Fluids fluidsInstance){
+                return new PoisonousFluidBlock(() -> fluidsInstance.SOURCE.get(), BlockBehaviour.Properties.of(Material.LAVA)
+                        .noOcclusion()
+                        .strength(100f)
+                        .noDrops());
+            }
         }
 
+    }
+
+    public static class Compounds {
+        public static RegistryObject<Item> createCompound(String name){
+            return ITEMS.register(name,
+                    () -> new ChemicalSubstance(new Item.Properties(), COMPOUND_SUBSTANCE_TAB));
+        }
+
+        public static RegistryObject<Item> createElement(String name){
+            return ITEMS.register(name,
+                    () -> new ChemicalSubstance(new Item.Properties(), ELEMENTARY_SUBSTANCE_TAB));
+        }
     }
 }

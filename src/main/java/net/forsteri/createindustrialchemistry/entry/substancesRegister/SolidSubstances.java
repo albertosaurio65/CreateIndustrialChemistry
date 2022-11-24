@@ -9,6 +9,7 @@ import net.minecraftforge.registries.RegistryObject;
 
 import static net.forsteri.createindustrialchemistry.entry.CreativeModeTabs.*;
 import static net.forsteri.createindustrialchemistry.entry.substancesRegister.DeferredRegisters.ITEMS;
+import static net.forsteri.createindustrialchemistry.utility.Registers.Compounds.*;
 
 @SuppressWarnings("unused")
 public class SolidSubstances {
@@ -83,12 +84,15 @@ public class SolidSubstances {
     public static final RegistryObject<Item> LITHIUM_CHLORIDE = ITEMS.register("lithium_chloride",
             () -> new ChemicalSubstance(new Item.Properties(), COMPOUND_SUBSTANCE_TAB));
 
-    public static final RegistryObject<Item> ALUMINIUM_OXIDE = ITEMS.register("aluminium_oxide",
-            () -> new ChemicalSubstance(new Item.Properties(), COMPOUND_SUBSTANCE_TAB));
+    public static final RegistryObject<Item> ALUMINIUM_OXIDE = createCompound("aluminium_oxide");
 
-    public static final RegistryObject<Item> LITHIUM = ITEMS.register("lithium",
-            () -> new ChemicalSubstance(new Item.Properties(), ELEMENTARY_SUBSTANCE_TAB));
+    public static final RegistryObject<Item> LITHIUM = createElement("lithium");
 
-    public static final RegistryObject<Item> LITHIUM_IODIDE = ITEMS.register("lithium_iodide",
-            () -> new ChemicalSubstance(new Item.Properties(), COMPOUND_SUBSTANCE_TAB));
+    public static final RegistryObject<Item> LITHIUM_IODIDE = createCompound("lithium_iodide");
+
+    public static final RegistryObject<Item> GEOTHITE = createCompound("geothite");
+
+    public static final RegistryObject<Item> NICKEL_OXIDE_HYDROXIDE = createCompound("nickel_oxide_hydroxide");
+
+    public static final RegistryObject<Item> ALUMINIUM = createElement("aluminium");
 }

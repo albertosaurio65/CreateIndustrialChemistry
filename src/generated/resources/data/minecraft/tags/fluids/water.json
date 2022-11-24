@@ -15,6 +15,10 @@
     "createindustrialchemistry:acetic_acid_flowing",
     "createindustrialchemistry:molten_lithium_chloride",
     "createindustrialchemistry:molten_lithium_chloride_flowing",
+    "createindustrialchemistry:molten_aluminium_oxide",
+    "createindustrialchemistry:molten_aluminium_oxide_flowing",
+    "createindustrialchemistry:molten_aluminium",
+    "createindustrialchemistry:molten_aluminium_flowing",
     "createindustrialchemistry:hydrogen",
     "createindustrialchemistry:hydrogen_flowing",
     "createindustrialchemistry:carbon_dioxide",
@@ -29,11 +33,13 @@
     "createindustrialchemistry:chlorine_flowing",
     "createindustrialchemistry:hydrogen_iodide",
     "createindustrialchemistry:hydrogen_iodide_flowing",
-    "createindustrialchemistry:calcium_chloride",
-    "createindustrialchemistry:calcium_chloride_flowing",
+    "createindustrialchemistry:calcium_chloride_aqueous_solution",
+    "createindustrialchemistry:calcium_chloride_aqueous_solution_flowing",
     "createindustrialchemistry:hydrochloric_acid",
     "createindustrialchemistry:hydrochloric_acid_flowing",
     "createindustrialchemistry:hydroiodic_acid",
-    "createindustrialchemistry:hydroiodic_acid_flowing"
+    "createindustrialchemistry:hydroiodic_acid_flowing",
+    "createindustrialchemistry:sodium_hydroxide_aqueous_solution",
+    "createindustrialchemistry:sodium_hydroxide_aqueous_solution_flowing"
   ]
 }
