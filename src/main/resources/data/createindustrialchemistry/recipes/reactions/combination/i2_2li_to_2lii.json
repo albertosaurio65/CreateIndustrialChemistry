@@ -5,8 +5,10 @@
       "item": "createindustrialchemistry:iodine"
     },
     {
-      "item": "createindustrialchemistry:lithium",
-      "count": 2
+      "item": "createindustrialchemistry:lithium"
+    },
+    {
+      "item": "createindustrialchemistry:lithium"
     }
   ],
   "results": [

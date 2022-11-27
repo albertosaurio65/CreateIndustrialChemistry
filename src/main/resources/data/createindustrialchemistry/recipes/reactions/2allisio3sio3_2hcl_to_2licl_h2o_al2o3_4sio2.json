@@ -2,8 +2,10 @@
   "type": "create:mixing",
   "ingredients": [
     {
-      "item": "createindustrialchemistry:spodumene_dusts",
-      "count": 2
+      "item": "createindustrialchemistry:spodumene_dusts"
+    },
+    {
+      "item": "createindustrialchemistry:spodumene_dusts"
     },
     {
       "fluid": "createindustrialchemistry:hydrochloric_acid",

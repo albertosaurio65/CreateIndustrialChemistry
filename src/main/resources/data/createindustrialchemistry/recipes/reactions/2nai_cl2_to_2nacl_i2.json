@@ -2,8 +2,10 @@
   "type": "create:mixing",
   "ingredients": [
     {
-      "item": "createindustrialchemistry:sodium_iodide",
-      "count": 2
+      "item": "createindustrialchemistry:sodium_iodide"
+    },
+    {
+      "item": "createindustrialchemistry:sodium_iodide"
     },
     {
       "fluid": "createindustrialchemistry:chlorine",

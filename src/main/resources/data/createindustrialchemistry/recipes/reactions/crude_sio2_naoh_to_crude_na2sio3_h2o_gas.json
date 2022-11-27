@@ -5,8 +5,10 @@
       "item": "createindustrialchemistry:crude_silicon_dioxide"
     },
     {
-      "item": "createindustrialchemistry:sodium_hydroxide",
-      "count": 2
+      "item": "createindustrialchemistry:sodium_hydroxide"
+    },
+    {
+      "item": "createindustrialchemistry:sodium_hydroxide"
     }
   ],
   "results": [
