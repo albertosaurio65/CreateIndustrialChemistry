@@ -1,0 +1,21 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/zinc"
+    },
+    {
+      "tag": "forge:ingots/aluminium"
+    },
+    {
+      "tag": "forge:ingots/nickel"
+    }
+  ],
+  "results": [
+    {
+      "item": "createindustrialchemistry:ni_al_zn_alloy",
+      "count": 3
+    }
+  ],
+  "heatRequirement": "superheated"
+}

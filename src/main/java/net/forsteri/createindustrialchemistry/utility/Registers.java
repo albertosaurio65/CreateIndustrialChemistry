@@ -22,8 +22,7 @@ import net.minecraftforge.registries.RegistryObject;
 
 import java.util.function.Function;
 
-import static net.forsteri.createindustrialchemistry.entry.CreativeModeTabs.COMPOUND_SUBSTANCE_TAB;
-import static net.forsteri.createindustrialchemistry.entry.CreativeModeTabs.ELEMENTARY_SUBSTANCE_TAB;
+import static net.forsteri.createindustrialchemistry.entry.CreativeModeTabs.*;
 import static net.forsteri.createindustrialchemistry.entry.substancesRegister.DeferredRegisters.*;
 
 public class Registers {
@@ -117,6 +116,11 @@ public class Registers {
         public static RegistryObject<Item> createElement(String name){
             return ITEMS.register(name,
                     () -> new ChemicalSubstance(new Item.Properties(), ELEMENTARY_SUBSTANCE_TAB));
+        }
+
+        public static RegistryObject<Item> createMixture(String name){
+            return ITEMS.register(name,
+                    () -> new ChemicalSubstance(new Item.Properties(), MIXTURE_TAB));
         }
     }
 }

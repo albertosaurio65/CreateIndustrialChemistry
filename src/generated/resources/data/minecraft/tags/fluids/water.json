@@ -40,6 +40,8 @@
     "createindustrialchemistry:hydroiodic_acid",
     "createindustrialchemistry:hydroiodic_acid_flowing",
     "createindustrialchemistry:sodium_hydroxide_aqueous_solution",
-    "createindustrialchemistry:sodium_hydroxide_aqueous_solution_flowing"
+    "createindustrialchemistry:sodium_hydroxide_aqueous_solution_flowing",
+    "createindustrialchemistry:sodium_aluminate_aqueous_solution",
+    "createindustrialchemistry:sodium_aluminate_aqueous_solution_flowing"
   ]
 }

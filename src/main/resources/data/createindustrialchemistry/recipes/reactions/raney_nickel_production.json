@@ -1,0 +1,23 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "createindustrialchemistry:ni_al_zn_alloy"
+    },
+    {
+      "fluid": "createindustrialchemistry:sodium_hydroxide_aqueous_solution",
+      "amount": 500
+    }
+  ],
+  "results": [
+    {
+      "item": "createindustrialchemistry:raney_nickel",
+      "count": 2
+    },
+    {
+      "fluid": "createindustrialchemistry:sodium_aluminate_aqueous_solution",
+      "amount": 500
+    }
+  ],
+  "heatRequirement": "heated"
+}

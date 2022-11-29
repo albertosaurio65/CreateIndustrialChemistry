@@ -9,9 +9,10 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.registries.RegistryObject;
 
-import static net.forsteri.createindustrialchemistry.entry.CreativeModeTabs.*;
+import static net.forsteri.createindustrialchemistry.entry.CreativeModeTabs.MIXTURE_TAB;
 import static net.forsteri.createindustrialchemistry.entry.substancesRegister.DeferredRegisters.BLOCKS;
 import static net.forsteri.createindustrialchemistry.entry.substancesRegister.DeferredRegisters.ITEMS;
+import static net.forsteri.createindustrialchemistry.utility.Registers.Compounds.createMixture;
 
 @SuppressWarnings("unused")
 public class Mixtures {
@@ -31,4 +32,8 @@ public class Mixtures {
 
     public static final RegistryObject<Item> COPPER_ZINC_OXIDE = ITEMS.register("copper_zinc_oxide",
             () -> new ChemicalSubstance(new Item.Properties(), MIXTURE_TAB));
+
+    public static final RegistryObject<Item> NI_AL_ZN_ALLOY = createMixture("ni_al_zn_alloy");
+
+    public static final RegistryObject<Item> RANEY_NICKEL = createMixture("raney_nickel");
 }
