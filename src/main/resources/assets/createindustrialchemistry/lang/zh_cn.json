@@ -27,6 +27,9 @@
   "item.createindustrialchemistry.aluminium" : "铝",
   "iupac.createindustrialchemistry.aluminium" : "铝",
   "formula.createindustrialchemistry.aluminium" : "Al",
+  "item.createindustrialchemistry.nickel" : "镍",
+  "iupac.createindustrialchemistry.nickel" : "镍",
+  "formula.createindustrialchemistry.nickel" : "Ni",
 
   "itemGroup.compound_substance_tab": "机械动力: 工业化学 | 化合物",
   "item.createindustrialchemistry.sodium_hydroxide": "氢氧化钠",

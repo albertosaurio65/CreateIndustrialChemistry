@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "createindustrialchemistry:nickel_oxide_hydroxide"
+  },
+  "result": "createindustrialchemistry:nickel",
+  "experience": 0.0,
+  "cookingtime": 200
+}
