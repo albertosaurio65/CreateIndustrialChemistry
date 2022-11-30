@@ -19,6 +19,8 @@
     "createindustrialchemistry:molten_aluminium_oxide_flowing",
     "createindustrialchemistry:molten_aluminium",
     "createindustrialchemistry:molten_aluminium_flowing",
+    "createindustrialchemistry:acetone",
+    "createindustrialchemistry:acetone_flowing",
     "createindustrialchemistry:hydrogen",
     "createindustrialchemistry:hydrogen_flowing",
     "createindustrialchemistry:carbon_dioxide",
@@ -33,6 +35,8 @@
     "createindustrialchemistry:chlorine_flowing",
     "createindustrialchemistry:hydrogen_iodide",
     "createindustrialchemistry:hydrogen_iodide_flowing",
+    "createindustrialchemistry:acetone_gas",
+    "createindustrialchemistry:acetone_gas_flowing",
     "createindustrialchemistry:calcium_chloride_aqueous_solution",
     "createindustrialchemistry:calcium_chloride_aqueous_solution_flowing",
     "createindustrialchemistry:hydrochloric_acid",
@@ -42,6 +46,8 @@
     "createindustrialchemistry:sodium_hydroxide_aqueous_solution",
     "createindustrialchemistry:sodium_hydroxide_aqueous_solution_flowing",
     "createindustrialchemistry:sodium_aluminate_aqueous_solution",
-    "createindustrialchemistry:sodium_aluminate_aqueous_solution_flowing"
+    "createindustrialchemistry:sodium_aluminate_aqueous_solution_flowing",
+    "createindustrialchemistry:calcium_acetate_aqueous_solution",
+    "createindustrialchemistry:calcium_acetate_aqueous_solution_flowing"
   ]
 }

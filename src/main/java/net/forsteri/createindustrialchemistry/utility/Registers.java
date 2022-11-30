@@ -33,7 +33,7 @@ public class Registers {
         public RegistryObject<LiquidBlock> BLOCK;
         public RegistryObject<Item> TANK;
         public ForgeFlowingFluid.Properties PROPERTIES;
-        public Fluids(String name, boolean rises, int color, Function<Fluids, FluidBlock> function, CreativeModeTab... creativeModeTabs) {
+        public Fluids(String name, boolean rises, int color, Function<Fluids, FluidBlock> function, int distance, CreativeModeTab... creativeModeTabs) {
             this.PROPERTIES = new ForgeFlowingFluid.Properties(
                     () -> this.SOURCE.get(), () -> this.FLOWING.get(),
                     FluidAttributes.builder(WATER_STILL_RL, WATER_FLOWING_RL)
@@ -43,8 +43,8 @@ public class Registers {
                             .sound(SoundEvents.BUCKET_FILL)
                             .color(color)
             )
-                    .slopeFindDistance(2)
-                    .levelDecreasePerBlock(2)
+                    .slopeFindDistance(7/distance)
+                    .levelDecreasePerBlock(7/distance)
                     .block(() -> this.BLOCK.get())
                     .bucket(() -> Items.BUCKET);
             if(!rises) {
@@ -68,8 +68,18 @@ public class Registers {
         }
 
         public Fluids(String name, boolean rises, int color, CreativeModeTab... creativeModeTabs) {
-            this(name, rises, color, FluidBlockGens::normal, creativeModeTabs);
+            this(name, rises, color, FluidBlockGens::normal, 2, creativeModeTabs);
         }
+
+        public Fluids(String name, boolean rises, int color, Function<Fluids, FluidBlock> function, CreativeModeTab... creativeModeTabs) {
+            this(name, rises, color, function, 2, creativeModeTabs);
+        }
+
+        public Fluids(String name, boolean rises, int color, int distance, CreativeModeTab... creativeModeTabs) {
+            this(name, rises, color, FluidBlockGens::normal, distance, creativeModeTabs);
+        }
+
+
 
         public static class FluidBlockGens{
             public static FluidBlock normal(Fluids fluidsInstance){

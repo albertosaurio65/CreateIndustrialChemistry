@@ -34,5 +34,8 @@ public class LiquidSubstances {
 
     public static final Fluids MOLTEN_ALUMINIUM = new Registers.Fluids(
             "molten_aluminium", false, 0xFFDD6612, Fluids.FluidBlockGens::hot, ELEMENTARY_SUBSTANCE_TAB);
+
+    public static final Fluids ACETONE = new Registers.Fluids(
+            "acetone", false, 0xFFFFFFFF, Fluids.FluidBlockGens.basic(19.2f), COMPOUND_SUBSTANCE_TAB);
     public static void register(){}
 }
