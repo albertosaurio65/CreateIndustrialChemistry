@@ -1,5 +1,6 @@
 package net.forsteri.createindustrialchemistry.utility;
 
+import net.forsteri.createindustrialchemistry.entry.substancesRegister.Equipments;
 import net.forsteri.createindustrialchemistry.substances.abstracts.ChemicalSubstance;
 import net.forsteri.createindustrialchemistry.substances.abstracts.FluidBlock;
 import net.forsteri.createindustrialchemistry.substances.abstracts.fluidBlockTypes.AcidicFluidBlock;
@@ -33,7 +34,7 @@ public class Registers {
         public RegistryObject<LiquidBlock> BLOCK;
         public RegistryObject<Item> TANK;
         public ForgeFlowingFluid.Properties PROPERTIES;
-        public Fluids(String name, boolean rises, int color, Function<Fluids, FluidBlock> function, int distance, CreativeModeTab... creativeModeTabs) {
+        public Fluids(String name, boolean rises, int color, Function<Fluids, FluidBlock> fluidBlockGen, FunctionInterface.TankItemGenFunction tankItemGen, int distance, CreativeModeTab... creativeModeTabs) {
             this.PROPERTIES = new ForgeFlowingFluid.Properties(
                     () -> this.SOURCE.get(), () -> this.FLOWING.get(),
                     FluidAttributes.builder(WATER_STILL_RL, WATER_FLOWING_RL)
@@ -55,16 +56,15 @@ public class Registers {
                 this.FLOWING = FLUIDS.register(name + "_flowing", () -> new GeneralRisingGas.Flowing(this.PROPERTIES, () -> this.TANK.get()));
             }
             this.BLOCK = BLOCKS.register(name,
-                    () -> function.apply(this));
+                    () -> fluidBlockGen.apply(this));
 
 
             this.TANK = ITEMS.register(name+"_tank",
-                    () -> new MetalTank(
-                            this.SOURCE,
-                            new Item.Properties()
-                                    .stacksTo(1)
-                            ,color, creativeModeTabs));
+                    () -> tankItemGen.apply(this, color, creativeModeTabs));
+        }
 
+        public Fluids(String name, boolean rises, int color, Function<Fluids, FluidBlock> function, int distance, CreativeModeTab... creativeModeTabs){
+            this(name, rises, color, function, TankItemGens::normal, distance, creativeModeTabs);
         }
 
         public Fluids(String name, boolean rises, int color, CreativeModeTab... creativeModeTabs) {
@@ -78,8 +78,6 @@ public class Registers {
         public Fluids(String name, boolean rises, int color, int distance, CreativeModeTab... creativeModeTabs) {
             this(name, rises, color, FluidBlockGens::normal, distance, creativeModeTabs);
         }
-
-
 
         public static class FluidBlockGens{
             public static FluidBlock normal(Fluids fluidsInstance){
@@ -112,6 +110,25 @@ public class Registers {
                         .noOcclusion()
                         .strength(100f)
                         .noDrops());
+            }
+        }
+
+        public static class TankItemGens{
+            public static Item normal(Fluids fluidsInstance, Integer color, CreativeModeTab... creativeModeTabs){
+                return new MetalTank(
+                        fluidsInstance.SOURCE,
+                        new Item.Properties()
+                                .stacksTo(1)
+                        ,color, creativeModeTabs);
+            }
+
+            public static FunctionInterface.TankItemGenFunction fuel(int fuelTime){
+                return (Fluids fluids, Integer color, CreativeModeTab... creativeModeTabs) -> (new MetalTank(
+                        fluids.SOURCE,
+                        new Item.Properties()
+                                .stacksTo(1)
+                                .craftRemainder(Equipments.EMPTY_METAL_TANK.get()
+                                ), color, fuelTime, creativeModeTabs));
             }
         }
 

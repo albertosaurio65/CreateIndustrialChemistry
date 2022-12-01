@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "createindustrialchemistry:empty_metal_tank"
+    },
+    {
+      "fluid": "createindustrialchemistry:isopropyl_alcohol_gas",
+      "nbt": {},
+      "amount": 1000
+    }
+  ],
+  "results": [
+    {
+      "item": "createindustrialchemistry:isopropyl_alcohol_gas_tank"
+    }
+  ]
+}

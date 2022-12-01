@@ -22,10 +22,10 @@ public class DeferredRegisters {
             DeferredRegister.create(ForgeRegistries.FLUIDS, CreateIndustrialChemistry.MOD_ID);
 
     public static void register(IEventBus eventBus){
+        Equipments.register();
         SolidSubstances.register();
         LiquidSubstances.register();
         GasSubstances.register();
-        Equipments.register();
         AqueousSolutions.register();
         Mixtures.register();
         TileEntities.register();

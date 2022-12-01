@@ -29,6 +29,12 @@ public class GasSubstances {
             "hydrogen_iodide", true, 0xFFFFFFFF, COMPOUND_SUBSTANCE_TAB);
 
     public static final Registers.Fluids ACETONE_GAS = new Registers.Fluids(
-            "acetone_gas", true, 0xFFFFFFFF, Registers.Fluids.FluidBlockGens.basic(19.2f), 1, COMPOUND_SUBSTANCE_TAB);
+            "acetone_gas", false, 0xFFFFFFFF, Registers.Fluids.FluidBlockGens.basic(19.2f), 1, COMPOUND_SUBSTANCE_TAB);
+
+    public static final Registers.Fluids ISOPROPYL_ALCOHOL_GAS = new Registers.Fluids(
+            "isopropyl_alcohol_gas", false, 0xFFFFFFFF, Registers.Fluids.FluidBlockGens.basic(16.5f), 1, COMPOUND_SUBSTANCE_TAB);
+
+    public static final Registers.Fluids PROPYLENE = new Registers.Fluids(
+            "propylene", false, 0xFFFFFFFF, Registers.Fluids.FluidBlockGens.basic(2.1f), Registers.Fluids.TankItemGens.fuel(9600), 1, COMPOUND_SUBSTANCE_TAB);
     public static void register(){}
 }

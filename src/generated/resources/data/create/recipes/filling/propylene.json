@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "createindustrialchemistry:empty_metal_tank"
+    },
+    {
+      "fluid": "createindustrialchemistry:propylene",
+      "nbt": {},
+      "amount": 1000
+    }
+  ],
+  "results": [
+    {
+      "item": "createindustrialchemistry:propylene_tank"
+    }
+  ]
+}

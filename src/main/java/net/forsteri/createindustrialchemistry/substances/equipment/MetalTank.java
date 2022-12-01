@@ -15,6 +15,7 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
+import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.level.ClipContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.LiquidBlockContainer;
@@ -44,6 +45,8 @@ public class MetalTank extends BucketItem {
     protected final Collection<CreativeModeTab> creativeModeTabs;
     protected final java.util.function.Supplier<? extends Fluid> fluidSupplier;
     protected int color;
+
+    public int fuelTime = -1;
 
     public boolean genModel;
 
@@ -84,6 +87,20 @@ public class MetalTank extends BucketItem {
         this.color = color;
         this.creativeModeTabs.add(CreativeModeTab.TAB_SEARCH);
         this.creativeModeTabs.add(FLUID_TAB);
+    }
+
+    public MetalTank(java.util.function.Supplier<? extends Fluid> supplier, Item.Properties builder, int color, int fuelTime, CreativeModeTab... creativeModeTabs) {
+        super(supplier, builder);
+        this.content = null;
+        this.fluidSupplier = supplier;
+        this.genModel = true;
+        this.creativeModeTabs = new ArrayList<>(
+                Arrays.asList(creativeModeTabs)
+        );
+        this.color = color;
+        this.creativeModeTabs.add(CreativeModeTab.TAB_SEARCH);
+        this.creativeModeTabs.add(FLUID_TAB);
+        this.fuelTime = fuelTime;
     }
 
     public MetalTank(java.util.function.Supplier<? extends Fluid> supplier, Item.Properties builder, int color, boolean genModel,CreativeModeTab... creativeModeTabs) {
@@ -187,6 +204,11 @@ public class MetalTank extends BucketItem {
 
     public int getColor() {
         return color;
+    }
+
+    @Override
+    public int getBurnTime(ItemStack itemStack, @Nullable RecipeType<?> recipeType) {
+        return this.fuelTime;
     }
 
 }
