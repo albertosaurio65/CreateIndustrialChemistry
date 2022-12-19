@@ -1,0 +1,26 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "fluid": "createindustrialchemistry:propylene",
+      "amount": 100
+    },
+    {
+      "item": "createindustrialchemistry:aluminium_oxide"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "createindustrialchemistry:isoprene",
+      "amount": 50
+    },
+    {
+      "fluid": "createindustrialchemistry:methane",
+      "amount": 50
+    },
+    {
+      "item": "createindustrialchemistry:aluminium_oxide"
+    }
+  ],
+  "heatRequirement": "heated"
+}
