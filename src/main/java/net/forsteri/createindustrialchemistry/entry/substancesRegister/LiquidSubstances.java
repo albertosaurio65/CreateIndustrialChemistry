@@ -40,5 +40,8 @@ public class LiquidSubstances {
 
     public static final Fluids ISOPRENE = new Registers.Fluids(
             "isoprene", false, 0xFFFFFFFF, Fluids.FluidBlockGens::normal, COMPOUND_SUBSTANCE_TAB);
+
+    public static final Fluids N_BUTANOL = new Registers.Fluids(
+            "n_butanol", false, 0xFFFFFFFF, Fluids.FluidBlockGens::normal, COMPOUND_SUBSTANCE_TAB);
     public static void register(){}
 }

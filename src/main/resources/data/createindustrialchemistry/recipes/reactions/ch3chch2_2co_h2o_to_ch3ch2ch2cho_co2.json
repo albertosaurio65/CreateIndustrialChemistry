@@ -1,0 +1,28 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "fluid": "createindustrialchemistry:propylene",
+      "amount": 500
+    },
+    {
+      "fluid": "createindustrialchemistry:carbon_monoxide",
+      "amount": 1000
+    },
+    {
+      "fluid": "createindustrialchemistry:distilled_water",
+      "amount": 500
+    }
+  ],
+  "results": [
+    {
+      "fluid": "createindustrialchemistry:n_butanol",
+      "amount": 500
+    },
+    {
+      "fluid": "createindustrialchemistry:carbon_dioxide",
+      "amount": 500
+    }
+  ],
+  "heatRequirement": "superheated"
+}

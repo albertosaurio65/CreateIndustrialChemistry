@@ -1,0 +1,17 @@
+{
+  "type": "create:emptying",
+  "ingredients": [
+    {
+      "item": "createindustrialchemistry:n_butanol_tank"
+    }
+  ],
+  "results": [
+    {
+      "item": "createindustrialchemistry:empty_metal_tank"
+    },
+    {
+      "fluid": "createindustrialchemistry:n_butanol",
+      "amount": 1000
+    }
+  ]
+}

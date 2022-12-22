@@ -3,7 +3,7 @@
   "ingredients": [
     {
       "fluid": "createindustrialchemistry:propylene",
-      "amount": 100
+      "amount": 1000
     },
     {
       "item": "createindustrialchemistry:aluminium_oxide"
@@ -12,7 +12,7 @@
   "results": [
     {
       "fluid": "createindustrialchemistry:isoprene",
-      "amount": 50
+      "amount": 500
     },
     {
       "fluid": "createindustrialchemistry:methane",
@@ -22,5 +22,5 @@
       "item": "createindustrialchemistry:aluminium_oxide"
     }
   ],
-  "heatRequirement": "heated"
+  "heatRequirement": "superheated"
 }

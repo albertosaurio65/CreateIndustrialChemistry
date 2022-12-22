@@ -206,6 +206,10 @@
   "item.createindustrialchemistry.isoprene_tank" : "异戊二烯罐",
   "iupac.createindustrialchemistry.isoprene_tank" : "2-甲基丁-1,3-二烯",
   "formula.createindustrialchemistry.isoprene_tank" : "CH2=C(CH3)−CH=CH2",
+  "fluid.createindustrialchemistry.n_butanol": "1-丁醇",
+  "item.createindustrialchemistry.n_butanol_tank" : "1-丁醇罐",
+  "iupac.createindustrialchemistry.n_butanol_tank" : "丁-1-醇",
+  "formula.createindustrialchemistry.n_butanol_tank" : "CH3CH2CH2CH2OH",
 
 
   "block.createindustrialchemistry.acidic_sand": "含酸的沙子",
