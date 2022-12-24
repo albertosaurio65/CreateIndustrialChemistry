@@ -1,0 +1,29 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "fluid": "createindustrialchemistry:n_butanol",
+      "amount": 100
+    },
+    {
+      "fluid": "createindustrialchemistry:hydrochloric_acid",
+      "amount": 100
+    },
+    {
+      "item": "createindustrialchemistry:zinc_chloride"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "createindustrialchemistry:n_butylchloride",
+      "amount": 100
+    },
+    {
+      "fluid": "createindustrialchemistry:hydrogen",
+      "amount": 100
+    },
+    {
+      "item": "createindustrialchemistry:zinc_chloride"
+    }
+  ]
+}

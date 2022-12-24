@@ -92,6 +92,9 @@
   "item.createindustrialchemistry.nickel_oxide_hydroxide": "Nickel Oxide Hydroxide",
   "iupac.createindustrialchemistry.nickel_oxide_hydroxide": "Nickel(II) oxide hydroxide",
   "formula.createindustrialchemistry.nickel_oxide_hydroxide": "NiO(OH)",
+  "item.createindustrialchemistry.zinc_chloride": "Zinc Chloride",
+  "iupac.createindustrialchemistry.zinc_chloride": "Zinc chloride",
+  "formula.createindustrialchemistry.zinc_chloride": "ZnCl2",
 
   "itemGroup.fluid_tab" : "Fluid",
   "fluid.createindustrialchemistry.hydrogen": "Hydrogen",
@@ -210,6 +213,10 @@
   "item.createindustrialchemistry.n_butanol_tank" : "1-Butanol Tank",
   "iupac.createindustrialchemistry.n_butanol_tank" : "Butan-1-ol",
   "formula.createindustrialchemistry.n_butanol_tank" : "CH3CH2CH2CH2OH",
+  "fluid.createindustrialchemistry.n_butylchloride" : "1-Chlorobutane",
+  "item.createindustrialchemistry.n_butylchloride_tank" : "1-Chlorobutane Tank",
+  "iupac.createindustrialchemistry.n_butylchloride_tank" : "1-Chlorobutane",
+  "formula.createindustrialchemistry.n_butylchloride_tank" : "CH3(CH2)3Cl",
 
   "block.createindustrialchemistry.acidic_sand": "Acidic Sand",
   "block.createindustrialchemistry.purified_sand": "Purified Sand",

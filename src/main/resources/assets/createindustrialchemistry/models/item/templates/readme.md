@@ -1,1 +1,1 @@
-Just some file to copy and past into like white dust
+Just some file to copy and paste into like white dust

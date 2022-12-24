@@ -1,0 +1,21 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "create:zinc_ingot"
+    },
+    {
+      "fluid": "createindustrialchemistry:hydrochloric_acid",
+      "amount": 200
+    }
+  ],
+  "results": [
+    {
+      "item": "createindustrialchemistry:zinc_chloride"
+    },
+    {
+      "fluid": "createindustrialchemistry:hydrogen",
+      "amount": 100
+    }
+  ]
+}

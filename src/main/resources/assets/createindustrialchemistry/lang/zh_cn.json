@@ -92,6 +92,9 @@
   "item.createindustrialchemistry.nickel_oxide_hydroxide": "羟基氧化镍",
   "iupac.createindustrialchemistry.nickel_oxide_hydroxide": "羟基氧化镍",
   "formula.createindustrialchemistry.nickel_oxide_hydroxide": "NiO(OH)",
+  "item.createindustrialchemistry.zinc_chloride": "氯化锌",
+  "iupac.createindustrialchemistry.zinc_chloride": "氯化锌",
+  "formula.createindustrialchemistry.zinc_chloride": "ZnCl2",
 
   "itemGroup.fluid_tab" : "机械动力: 工业化学 | 流体",
   "fluid.createindustrialchemistry.hydrogen": "氢气",
@@ -210,6 +213,10 @@
   "item.createindustrialchemistry.n_butanol_tank" : "1-丁醇罐",
   "iupac.createindustrialchemistry.n_butanol_tank" : "丁-1-醇",
   "formula.createindustrialchemistry.n_butanol_tank" : "CH3CH2CH2CH2OH",
+  "fluid.createindustrialchemistry.n_butylchloride" : "1-氯丁烷",
+  "item.createindustrialchemistry.n_butylchloride_tank" : "1-氯丁烷罐",
+  "iupac.createindustrialchemistry.n_butylchloride_tank" : "1-氯丁烷",
+  "formula.createindustrialchemistry.n_butylchloride_tank" : "CH3(CH2)3Cl",
 
 
   "block.createindustrialchemistry.acidic_sand": "含酸的沙子",
