@@ -95,6 +95,9 @@
   "item.createindustrialchemistry.zinc_chloride": "氯化锌",
   "iupac.createindustrialchemistry.zinc_chloride": "氯化锌",
   "formula.createindustrialchemistry.zinc_chloride": "ZnCl2",
+  "item.createindustrialchemistry.n_butyllithium": "正丁基锂",
+  "iupac.createindustrialchemistry.n_butyllithium": "1-锂代丁烷",
+  "formula.createindustrialchemistry.n_butyllithium": "CH3(CH2)3Li",
 
   "itemGroup.fluid_tab" : "机械动力: 工业化学 | 流体",
   "fluid.createindustrialchemistry.hydrogen": "氢气",
@@ -217,7 +220,6 @@
   "item.createindustrialchemistry.n_butylchloride_tank" : "1-氯丁烷罐",
   "iupac.createindustrialchemistry.n_butylchloride_tank" : "1-氯丁烷",
   "formula.createindustrialchemistry.n_butylchloride_tank" : "CH3(CH2)3Cl",
-
 
   "block.createindustrialchemistry.acidic_sand": "含酸的沙子",
   "block.createindustrialchemistry.purified_sand": "纯沙",

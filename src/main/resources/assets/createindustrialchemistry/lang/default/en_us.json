@@ -95,6 +95,9 @@
   "item.createindustrialchemistry.zinc_chloride": "Zinc Chloride",
   "iupac.createindustrialchemistry.zinc_chloride": "Zinc chloride",
   "formula.createindustrialchemistry.zinc_chloride": "ZnCl2",
+  "item.createindustrialchemistry.n_butyllithium": "N-Butyllithium",
+  "iupac.createindustrialchemistry.n_butyllithium": "1-Lithiobutane",
+  "formula.createindustrialchemistry.n_butyllithium": "CH3(CH2)3Li",
 
   "itemGroup.fluid_tab" : "Fluid",
   "fluid.createindustrialchemistry.hydrogen": "Hydrogen",

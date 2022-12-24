@@ -1,0 +1,24 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "createindustrialchemistry:lithium"
+    },
+    {
+      "item": "createindustrialchemistry:lithium"
+    },
+    {
+      "fluid": "createindustrialchemistry:n_butylchloride",
+      "amount": 500
+    }
+  ],
+  "results": [
+    {
+      "item": "createindustrialchemistry:lithium_chloride"
+    },
+    {
+      "item": "createindustrialchemistry:n_butyllithium"
+    }
+  ],
+  "heatRequirement": "superheated"
+}

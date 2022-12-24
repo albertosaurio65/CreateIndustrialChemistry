@@ -46,5 +46,6 @@ public class LiquidSubstances {
 
     public static final Fluids N_BUTYLCHLORIDE = new Registers.Fluids(
             "n_butylchloride", false, 0xFFFFFFFF, Fluids.FluidBlockGens::normal, COMPOUND_SUBSTANCE_TAB);
+
     public static void register(){}
 }

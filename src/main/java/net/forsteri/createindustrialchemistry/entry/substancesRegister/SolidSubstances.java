@@ -99,4 +99,6 @@ public class SolidSubstances {
     public static final RegistryObject<Item> NICKEL = createElement("nickel");
 
     public static final RegistryObject<Item> ZINC_CHLORIDE = createCompound("zinc_chloride");
+
+    public static final RegistryObject<Item> N_BUTYLLITHIUM = createCompound("n_butyllithium");
 }
