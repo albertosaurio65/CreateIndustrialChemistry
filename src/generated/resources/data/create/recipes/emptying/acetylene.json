@@ -1,0 +1,17 @@
+{
+  "type": "create:emptying",
+  "ingredients": [
+    {
+      "item": "createindustrialchemistry:acetylene_tank"
+    }
+  ],
+  "results": [
+    {
+      "item": "createindustrialchemistry:empty_metal_tank"
+    },
+    {
+      "fluid": "createindustrialchemistry:acetylene",
+      "amount": 1000
+    }
+  ]
+}

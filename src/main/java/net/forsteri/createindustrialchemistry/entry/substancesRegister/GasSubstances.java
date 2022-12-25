@@ -39,5 +39,12 @@ public class GasSubstances {
 
     public static final Registers.Fluids METHANE = new Registers.Fluids(
             "methane", true, 0xFFFFFFFF, Registers.Fluids.FluidBlockGens::normal, Registers.Fluids.TankItemGens.fuel(1200), 1, COMPOUND_SUBSTANCE_TAB);
+
+    public static final Registers.Fluids ACETYLENE = new Registers.Fluids(
+            "acetylene", true, 0xFFFFFFFF, Registers.Fluids.FluidBlockGens::normal, 1, COMPOUND_SUBSTANCE_TAB);
+
+    public static final Registers.Fluids BENZENE = new Registers.Fluids(
+            "benzene", false, 0xFFFFFFFF, Registers.Fluids.FluidBlockGens.basic(6.1f), 1, COMPOUND_SUBSTANCE_TAB);
+
     public static void register(){}
 }

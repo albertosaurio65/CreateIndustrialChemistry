@@ -1,0 +1,22 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "tag": "forge:dusts/iron"
+    },
+    {
+      "fluid": "createindustrialchemistry:acetylene",
+      "amount": 300
+    }
+  ],
+  "results": [
+    {
+      "item": "createindustrialchemistry:iron_dusts"
+    },
+    {
+      "fluid": "createindustrialchemistry:benzene",
+      "amount": 100
+    }
+  ],
+  "heatRequirement": "heated"
+}

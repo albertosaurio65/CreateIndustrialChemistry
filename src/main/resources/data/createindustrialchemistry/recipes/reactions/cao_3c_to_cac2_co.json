@@ -1,0 +1,27 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "createindustrialchemistry:graphite"
+    },
+    {
+      "item": "createindustrialchemistry:graphite"
+    },
+    {
+      "item": "createindustrialchemistry:graphite"
+    },
+    {
+      "item": "createindustrialchemistry:calcium_oxide"
+    }
+  ],
+  "results": [
+    {
+      "item": "createindustrialchemistry:calcium_carbide"
+    },
+    {
+      "fluid": "createindustrialchemistry:carbon_monoxide",
+      "amount": 250
+    }
+  ],
+  "heatRequirement": "superheated"
+}

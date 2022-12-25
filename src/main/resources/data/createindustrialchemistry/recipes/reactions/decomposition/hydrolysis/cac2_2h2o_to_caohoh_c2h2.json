@@ -1,0 +1,21 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "createindustrialchemistry:calcium_carbide"
+    },
+    {
+      "fluid": "minecraft:water",
+      "amount": 200
+    }
+  ],
+  "results": [
+    {
+      "fluid": "createindustrialchemistry:acetylene",
+      "amount": 100
+    },
+    {
+      "item": "createindustrialchemistry:calcium_hydroxide"
+    }
+  ]
+}

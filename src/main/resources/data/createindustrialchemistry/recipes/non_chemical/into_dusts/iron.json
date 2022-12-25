@@ -2,12 +2,12 @@
   "type": "create:crushing",
   "ingredients": [
     {
-      "tag": "forge:ingots/copper"
+      "tag": "forge:ingots/iron"
     }
   ],
   "results": [
     {
-      "item": "createindustrialchemistry:copper_dusts"
+      "item": "createindustrialchemistry:iron_dusts"
     }
   ],
   "processingTime": 400
