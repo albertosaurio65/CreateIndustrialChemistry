@@ -1,7 +1,6 @@
 package net.forsteri.createindustrialchemistry.substances.abstracts;
 
 import it.unimi.dsi.fastutil.objects.Object2ByteLinkedOpenHashMap;
-import net.forsteri.createindustrialchemistry.entry.substancesRegister.GasSubstances;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.tags.BlockTags;
@@ -19,7 +18,6 @@ import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
-import net.minecraftforge.fluids.ForgeFlowingFluid;
 
 import javax.annotation.ParametersAreNonnullByDefault;
 import java.util.Map;

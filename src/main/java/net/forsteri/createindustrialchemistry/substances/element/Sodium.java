@@ -1,7 +1,7 @@
 package net.forsteri.createindustrialchemistry.substances.element;
 
-import net.forsteri.createindustrialchemistry.entry.substancesRegister.GasSubstances;
-import net.forsteri.createindustrialchemistry.entry.substancesRegister.SolidSubstances;
+import net.forsteri.createindustrialchemistry.entry.registers.substances.GasSubstances;
+import net.forsteri.createindustrialchemistry.entry.registers.substances.SolidSubstances;
 import net.forsteri.createindustrialchemistry.substances.abstracts.ChemicalSubstance;
 import net.forsteri.createindustrialchemistry.substances.abstracts.properties.inFluid.ExplodeInFluid;
 import net.minecraft.core.BlockPos;

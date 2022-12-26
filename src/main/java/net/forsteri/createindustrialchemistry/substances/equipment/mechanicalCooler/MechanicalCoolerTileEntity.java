@@ -10,7 +10,7 @@ import com.simibubi.create.foundation.tileEntity.behaviour.fluid.SmartFluidTankB
 import com.simibubi.create.foundation.utility.AnimationTickHolder;
 import com.simibubi.create.foundation.utility.Couple;
 import com.simibubi.create.foundation.utility.VecHelper;
-import net.forsteri.createindustrialchemistry.entry.substancesRegister.tileEntities.RecipeTypes;
+import net.forsteri.createindustrialchemistry.entry.registers.tileEntities.RecipeTypes;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.particles.ItemParticleOption;

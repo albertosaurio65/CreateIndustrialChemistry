@@ -1,8 +1,10 @@
-package net.forsteri.createindustrialchemistry.entry.substancesRegister;
+package net.forsteri.createindustrialchemistry.entry.registers;
 
 import net.forsteri.createindustrialchemistry.CreateIndustrialChemistry;
-import net.forsteri.createindustrialchemistry.entry.substancesRegister.tileEntities.Blocks;
-import net.forsteri.createindustrialchemistry.entry.substancesRegister.tileEntities.TileEntities;
+import net.forsteri.createindustrialchemistry.entry.registers.entities.Types;
+import net.forsteri.createindustrialchemistry.entry.registers.substances.*;
+import net.forsteri.createindustrialchemistry.entry.registers.tileEntities.Blocks;
+import net.forsteri.createindustrialchemistry.entry.registers.tileEntities.TileEntities;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -30,6 +32,7 @@ public class DeferredRegisters {
         Mixtures.register();
         TileEntities.register();
         Blocks.register();
+        Types.register();
         ITEMS.register(eventBus);
         BLOCKS.register(eventBus);
         FLUIDS.register(eventBus);

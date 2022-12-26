@@ -8,7 +8,7 @@ import com.jozufozu.flywheel.core.materials.model.ModelData;
 import com.simibubi.create.AllBlockPartials;
 import com.simibubi.create.content.contraptions.base.SingleRotatingInstance;
 import com.simibubi.create.content.contraptions.base.flwdata.RotatingData;
-import net.forsteri.createindustrialchemistry.entry.substancesRegister.tileEntities.Partials;
+import net.forsteri.createindustrialchemistry.entry.registers.tileEntities.TilePartials;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.LightLayer;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
@@ -22,7 +22,7 @@ public class KineticElectrolyzerInstance extends SingleRotatingInstance {
         Material<ModelData> mat = materialManager.defaultSolid()
                 .material(Materials.TRANSFORMED);
 
-        Instancer<ModelData> cannon = mat.getModel(Partials.KINETIC_ELECTROLYZER_EXTENDED);
+        Instancer<ModelData> cannon = mat.getModel(TilePartials.KINETIC_ELECTROLYZER_EXTENDED);
         extendedModel = cannon.createInstance();
 
         extendedModel.loadIdentity()

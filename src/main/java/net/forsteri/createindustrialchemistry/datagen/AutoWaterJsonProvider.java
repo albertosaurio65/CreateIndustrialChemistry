@@ -1,16 +1,11 @@
 package net.forsteri.createindustrialchemistry.datagen;
 
-import com.simibubi.create.foundation.data.recipe.CreateRecipeProvider;
-import net.forsteri.createindustrialchemistry.entry.substancesRegister.DeferredRegisters;
-import net.forsteri.createindustrialchemistry.entry.substancesRegister.Equipments;
+import net.forsteri.createindustrialchemistry.entry.registers.DeferredRegisters;
 import net.forsteri.createindustrialchemistry.substances.abstracts.FlowingFluid;
 import net.minecraft.data.DataGenerator;
-import net.minecraft.data.tags.BlockTagsProvider;
 import net.minecraft.data.tags.FluidTagsProvider;
-import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.tags.FluidTags;
 import net.minecraft.world.level.material.Fluid;
-import net.minecraft.world.level.material.Fluids;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
 import org.jetbrains.annotations.Nullable;

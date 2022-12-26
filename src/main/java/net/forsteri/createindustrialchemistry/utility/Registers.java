@@ -1,6 +1,6 @@
 package net.forsteri.createindustrialchemistry.utility;
 
-import net.forsteri.createindustrialchemistry.entry.substancesRegister.Equipments;
+import net.forsteri.createindustrialchemistry.entry.registers.Equipments;
 import net.forsteri.createindustrialchemistry.substances.abstracts.ChemicalSubstance;
 import net.forsteri.createindustrialchemistry.substances.abstracts.FluidBlock;
 import net.forsteri.createindustrialchemistry.substances.abstracts.fluidBlockTypes.AcidicFluidBlock;
@@ -24,7 +24,7 @@ import net.minecraftforge.registries.RegistryObject;
 import java.util.function.Function;
 
 import static net.forsteri.createindustrialchemistry.entry.CreativeModeTabs.*;
-import static net.forsteri.createindustrialchemistry.entry.substancesRegister.DeferredRegisters.*;
+import static net.forsteri.createindustrialchemistry.entry.registers.DeferredRegisters.*;
 
 public class Registers {
     public static class Fluids {

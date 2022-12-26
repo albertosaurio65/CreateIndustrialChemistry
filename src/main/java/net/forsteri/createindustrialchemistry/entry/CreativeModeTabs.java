@@ -1,9 +1,9 @@
 package net.forsteri.createindustrialchemistry.entry;
 
-import net.forsteri.createindustrialchemistry.entry.substancesRegister.AqueousSolutions;
-import net.forsteri.createindustrialchemistry.entry.substancesRegister.Equipments;
-import net.forsteri.createindustrialchemistry.entry.substancesRegister.GasSubstances;
-import net.forsteri.createindustrialchemistry.entry.substancesRegister.SolidSubstances;
+import net.forsteri.createindustrialchemistry.entry.registers.substances.AqueousSolutions;
+import net.forsteri.createindustrialchemistry.entry.registers.Equipments;
+import net.forsteri.createindustrialchemistry.entry.registers.substances.GasSubstances;
+import net.forsteri.createindustrialchemistry.entry.registers.substances.SolidSubstances;
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;

@@ -1,4 +1,4 @@
-package net.forsteri.createindustrialchemistry.entry.substancesRegister.tileEntities;
+package net.forsteri.createindustrialchemistry.entry.registers.tileEntities;
 
 import com.simibubi.create.content.contraptions.processing.ProcessingRecipeBuilder;
 import com.simibubi.create.content.contraptions.processing.ProcessingRecipeSerializer;

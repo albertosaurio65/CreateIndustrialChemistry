@@ -1,16 +1,14 @@
 package net.forsteri.createindustrialchemistry.substances.equipment.kineticElectrolyzer;
 
 import com.simibubi.create.AllBlocks;
-import com.simibubi.create.content.contraptions.base.HorizontalAxisKineticBlock;
 import com.simibubi.create.content.contraptions.base.HorizontalKineticBlock;
 import com.simibubi.create.foundation.block.ITE;
-import net.forsteri.createindustrialchemistry.entry.substancesRegister.tileEntities.TileEntities;
+import net.forsteri.createindustrialchemistry.entry.registers.tileEntities.TileEntities;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import org.jetbrains.annotations.NotNull;
 
 @SuppressWarnings("deprecation")

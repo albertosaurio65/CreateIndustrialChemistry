@@ -3,7 +3,7 @@ package net.forsteri.createindustrialchemistry.substances.equipment.mechanicalCo
 import com.simibubi.create.AllBlocks;
 import com.simibubi.create.content.contraptions.base.KineticBlock;
 import com.simibubi.create.foundation.block.ITE;
-import net.forsteri.createindustrialchemistry.entry.substancesRegister.tileEntities.TileEntities;
+import net.forsteri.createindustrialchemistry.entry.registers.tileEntities.TileEntities;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.LevelReader;

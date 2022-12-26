@@ -267,6 +267,9 @@
   "iupac.createindustrialchemistry.format": "IUPAC Name: %1$s",
   "formula.createindustrialchemistry.format": "Chemical Formula: %1$s",
 
+  "item.createindustrialchemistry.hydrogen_balloon": "Hydrogen Balloon",
+  "entity.createindustrialchemistry.hydrogen_balloon": "Hydrogen Balloon",
+
   "advancement.createindustrialchemistry.root": "Welcome to chemistry",
   "advancement.createindustrialchemistry.root.desc": "the world of \"magic\""
 }

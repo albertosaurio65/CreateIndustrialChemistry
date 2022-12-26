@@ -4,9 +4,10 @@ import com.mojang.logging.LogUtils;
 import com.simibubi.create.foundation.data.CreateRegistrate;
 import com.tterrag.registrate.util.nullness.NonNullSupplier;
 import net.forsteri.createindustrialchemistry.entry.handlers.ColorHandlers;
-import net.forsteri.createindustrialchemistry.entry.substancesRegister.DeferredRegisters;
-import net.forsteri.createindustrialchemistry.entry.substancesRegister.tileEntities.Partials;
-import net.forsteri.createindustrialchemistry.entry.substancesRegister.tileEntities.RecipeTypes;
+import net.forsteri.createindustrialchemistry.entry.registers.DeferredRegisters;
+import net.forsteri.createindustrialchemistry.entry.registers.entities.EntityPartials;
+import net.forsteri.createindustrialchemistry.entry.registers.tileEntities.TilePartials;
+import net.forsteri.createindustrialchemistry.entry.registers.tileEntities.RecipeTypes;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -31,6 +32,7 @@ public class CreateIndustrialChemistry {
     // Directly reference a slf4j logger
     public static final Logger LOGGER = LogUtils.getLogger();
 
+    @SuppressWarnings("removal")
     public static final NonNullSupplier<CreateRegistrate> REGISTRATE = CreateRegistrate.lazy(CreateIndustrialChemistry.MOD_ID);
 
     public CreateIndustrialChemistry() {
@@ -39,7 +41,8 @@ public class CreateIndustrialChemistry {
         DeferredRegisters.register(eventBus);
         RecipeTypes.register(eventBus);
         eventBus.addListener(this::setup);
-        DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> Partials::register);
+        DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> TilePartials::register);
+        DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> EntityPartials::register);
         MinecraftForge.EVENT_BUS.register(this);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(ColorHandlers::registerItemColors);
     }

@@ -267,6 +267,9 @@
   "iupac.createindustrialchemistry.format": "中文化学命名法名: %1$s",
   "formula.createindustrialchemistry.format": "化学式: %1$s",
 
+  "item.createindustrialchemistry.hydrogen_balloon": "氢气球",
+  "entity.createindustrialchemistry.hydrogen_balloon": "氢气球",
+
   "advancement.createindustrialchemistry.root": "欢迎来到化学世界",
   "advancement.createindustrialchemistry.root.desc": "神奇的魔法"
 }

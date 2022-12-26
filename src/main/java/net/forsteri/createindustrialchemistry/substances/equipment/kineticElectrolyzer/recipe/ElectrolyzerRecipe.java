@@ -2,7 +2,7 @@ package net.forsteri.createindustrialchemistry.substances.equipment.kineticElect
 
 import com.simibubi.create.content.contraptions.processing.BasinRecipe;
 import com.simibubi.create.content.contraptions.processing.ProcessingRecipeBuilder;
-import net.forsteri.createindustrialchemistry.entry.substancesRegister.tileEntities.RecipeTypes;
+import net.forsteri.createindustrialchemistry.entry.registers.tileEntities.RecipeTypes;
 
 public class ElectrolyzerRecipe extends BasinRecipe {
     public ElectrolyzerRecipe(ProcessingRecipeBuilder.ProcessingRecipeParams params) {

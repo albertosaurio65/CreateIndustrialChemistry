@@ -11,7 +11,7 @@ import net.minecraftforge.registries.RegistryObject;
 
 import java.util.Objects;
 
-import static net.forsteri.createindustrialchemistry.entry.substancesRegister.DeferredRegisters.ITEMS;
+import static net.forsteri.createindustrialchemistry.entry.registers.DeferredRegisters.ITEMS;
 
 public class TankModelProvider extends ItemModelProvider {
     public TankModelProvider(DataGenerator generator, String modid, ExistingFileHelper existingFileHelper) {

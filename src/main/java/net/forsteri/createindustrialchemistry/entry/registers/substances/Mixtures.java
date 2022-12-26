@@ -1,4 +1,4 @@
-package net.forsteri.createindustrialchemistry.entry.substancesRegister;
+package net.forsteri.createindustrialchemistry.entry.registers.substances;
 
 import net.forsteri.createindustrialchemistry.substances.abstracts.ChemicalSubstance;
 import net.minecraft.world.item.BlockItem;
@@ -10,8 +10,8 @@ import net.minecraft.world.level.material.Material;
 import net.minecraftforge.registries.RegistryObject;
 
 import static net.forsteri.createindustrialchemistry.entry.CreativeModeTabs.MIXTURE_TAB;
-import static net.forsteri.createindustrialchemistry.entry.substancesRegister.DeferredRegisters.BLOCKS;
-import static net.forsteri.createindustrialchemistry.entry.substancesRegister.DeferredRegisters.ITEMS;
+import static net.forsteri.createindustrialchemistry.entry.registers.DeferredRegisters.BLOCKS;
+import static net.forsteri.createindustrialchemistry.entry.registers.DeferredRegisters.ITEMS;
 import static net.forsteri.createindustrialchemistry.utility.Registers.Compounds.createMixture;
 
 @SuppressWarnings("unused")

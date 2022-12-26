@@ -1,6 +1,6 @@
 package net.forsteri.createindustrialchemistry.substances.equipment;
 
-import net.forsteri.createindustrialchemistry.entry.substancesRegister.Equipments;
+import net.forsteri.createindustrialchemistry.entry.registers.Equipments;
 import net.forsteri.createindustrialchemistry.substances.abstracts.FlowingFluid;
 import net.forsteri.createindustrialchemistry.substances.utility.fluids.TankPickup;
 import net.forsteri.createindustrialchemistry.utility.ChemUtil;

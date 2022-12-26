@@ -1,4 +1,4 @@
-package net.forsteri.createindustrialchemistry.entry.substancesRegister;
+package net.forsteri.createindustrialchemistry.entry.registers.substances;
 
 import net.forsteri.createindustrialchemistry.substances.abstracts.ChemicalSubstance;
 import net.forsteri.createindustrialchemistry.substances.compound.CalciumOxide;
@@ -8,7 +8,7 @@ import net.minecraft.world.item.Item;
 import net.minecraftforge.registries.RegistryObject;
 
 import static net.forsteri.createindustrialchemistry.entry.CreativeModeTabs.*;
-import static net.forsteri.createindustrialchemistry.entry.substancesRegister.DeferredRegisters.ITEMS;
+import static net.forsteri.createindustrialchemistry.entry.registers.DeferredRegisters.ITEMS;
 import static net.forsteri.createindustrialchemistry.utility.Registers.Compounds.*;
 
 @SuppressWarnings("unused")

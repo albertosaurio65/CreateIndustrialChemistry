@@ -1,4 +1,4 @@
-package net.forsteri.createindustrialchemistry.entry.substancesRegister;
+package net.forsteri.createindustrialchemistry.entry.registers.substances;
 
 import net.forsteri.createindustrialchemistry.utility.Registers;
 

@@ -4,7 +4,7 @@ import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Vector3f;
 import com.simibubi.create.AllBlocks;
 import com.simibubi.create.compat.jei.category.animations.AnimatedKinetics;
-import net.forsteri.createindustrialchemistry.entry.substancesRegister.tileEntities.Blocks;
+import net.forsteri.createindustrialchemistry.entry.registers.tileEntities.Blocks;
 
 public class NotAnimatedCooler extends AnimatedKinetics {
     @Override

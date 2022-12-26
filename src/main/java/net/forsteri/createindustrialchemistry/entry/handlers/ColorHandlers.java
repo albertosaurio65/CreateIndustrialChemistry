@@ -2,10 +2,9 @@ package net.forsteri.createindustrialchemistry.entry.handlers;
 
 import com.mojang.logging.LogUtils;
 import net.forsteri.createindustrialchemistry.CreateIndustrialChemistry;
-import net.forsteri.createindustrialchemistry.entry.substancesRegister.DeferredRegisters;
+import net.forsteri.createindustrialchemistry.entry.registers.DeferredRegisters;
 import net.forsteri.createindustrialchemistry.substances.equipment.MetalTank;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.alchemy.PotionUtils;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.ColorHandlerEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
