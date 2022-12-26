@@ -270,6 +270,8 @@
   "item.createindustrialchemistry.hydrogen_balloon": "氢气球",
   "entity.createindustrialchemistry.hydrogen_balloon": "氢气球",
 
+  "effect.createindustrialchemistry.poison_resistance": "百毒不侵",
+
   "advancement.createindustrialchemistry.root": "欢迎来到化学世界",
   "advancement.createindustrialchemistry.root.desc": "神奇的魔法"
 }

@@ -270,6 +270,8 @@
   "item.createindustrialchemistry.hydrogen_balloon": "Hydrogen Balloon",
   "entity.createindustrialchemistry.hydrogen_balloon": "Hydrogen Balloon",
 
+  "effect.createindustrialchemistry.poison_resistance": "Poison Resistance",
+
   "advancement.createindustrialchemistry.root": "Welcome to chemistry",
   "advancement.createindustrialchemistry.root.desc": "the world of \"magic\""
 }

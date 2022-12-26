@@ -6,6 +6,7 @@ import net.forsteri.createindustrialchemistry.entry.registers.substances.*;
 import net.forsteri.createindustrialchemistry.entry.registers.tileEntities.Blocks;
 import net.forsteri.createindustrialchemistry.entry.registers.tileEntities.TileEntities;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.material.Fluid;
@@ -23,6 +24,9 @@ public class DeferredRegisters {
     public static final DeferredRegister<Fluid> FLUIDS =
             DeferredRegister.create(ForgeRegistries.FLUIDS, CreateIndustrialChemistry.MOD_ID);
 
+    public static final DeferredRegister<MobEffect> MOB_EFFECTS =
+            DeferredRegister.create(ForgeRegistries.MOB_EFFECTS, CreateIndustrialChemistry.MOD_ID);
+
     public static void register(IEventBus eventBus){
         Equipments.register();
         SolidSubstances.register();
@@ -33,9 +37,11 @@ public class DeferredRegisters {
         TileEntities.register();
         Blocks.register();
         Types.register();
+        MobEffects.register();
         ITEMS.register(eventBus);
         BLOCKS.register(eventBus);
         FLUIDS.register(eventBus);
+        MOB_EFFECTS.register(eventBus);
     }
 
     public static final ResourceLocation WATER_STILL_RL = new ResourceLocation("block/water_still");

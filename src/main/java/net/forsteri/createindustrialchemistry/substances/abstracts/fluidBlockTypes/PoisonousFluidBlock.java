@@ -7,16 +7,11 @@ import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.ai.attributes.AttributeInstance;
-import net.minecraft.world.entity.ai.attributes.AttributeModifier;
-import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.FlowingFluid;
 
 import javax.annotation.ParametersAreNonnullByDefault;
-import java.util.Objects;
-import java.util.UUID;
 import java.util.function.Supplier;
 
 @SuppressWarnings("deprecation")
@@ -48,7 +43,7 @@ public class PoisonousFluidBlock extends FluidBlock {
 
     @Override
     public void entityInside(BlockState pState, Level pLevel, BlockPos pPos, Entity pEntity) {
-        if(pEntity instanceof LivingEntity entity){
+        if(pEntity instanceof LivingEntity entity && !entity.hasEffect(net.forsteri.createindustrialchemistry.entry.registers.MobEffects.POISON_RESISTANCE.get())){
             if(!entity.hasEffect(MobEffects.POISON)) {
                 entity.addEffect(new MobEffectInstance(MobEffects.POISON, 600, this.level));
             }
