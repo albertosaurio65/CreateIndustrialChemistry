@@ -26,6 +26,7 @@ public class BalloonItem extends Item {
     @Override
     public @NotNull InteractionResult useOn(UseOnContext pContext) {
         BalloonEntity balloon = new BalloonEntity(balloonType.get(), pContext.getLevel());
+        balloon.setBalloonItem(this);
         balloon.setPos(pContext.getClickLocation());
         balloon.xo = pContext.getClickLocation().x;
         balloon.yo = pContext.getClickLocation().y;
@@ -36,14 +37,18 @@ public class BalloonItem extends Item {
 
     @Override
     public @NotNull InteractionResult interactLivingEntity(ItemStack pStack, Player pPlayer, LivingEntity pInteractionTarget, InteractionHand pUsedHand) {
-        if (!(pInteractionTarget instanceof Mob && ((Mob) pInteractionTarget).canBeLeashed(pPlayer))) return InteractionResult.PASS;
+        if (!(pInteractionTarget instanceof Mob && ((Mob) pInteractionTarget).canBeLeashed(pPlayer)) && !(pInteractionTarget instanceof Player)) return InteractionResult.PASS;
         BalloonEntity balloon = new BalloonEntity(balloonType.get(), pInteractionTarget.level);
+        balloon.setBalloonItem(this);
         balloon.setPos(pInteractionTarget.getX(), pInteractionTarget.getY(), pInteractionTarget.getZ());
         balloon.xo = pInteractionTarget.getX();
         balloon.yo = pInteractionTarget.getY();
         balloon.zo = pInteractionTarget.getZ();
         pInteractionTarget.level.addFreshEntity(balloon);
-        ((Mob) pInteractionTarget).setLeashedTo(balloon, true);
+        if (pInteractionTarget instanceof Mob) {
+            ((Mob) pInteractionTarget).setLeashedTo(balloon, true);
+        }
+        if(!pPlayer.isCreative()) pStack.shrink(1);
         return InteractionResult.SUCCESS;
     }
 }

@@ -3,15 +3,24 @@ package net.forsteri.createindustrialchemistry.usefulStuffs.balloon;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.protocol.game.ClientboundAddEntityPacket;
+import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MoverType;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.NotNull;
 
 public class BalloonEntity extends Entity {
+
+    public Item balloonItem;
     public BalloonEntity(EntityType<? extends Entity> p_20966_, Level p_20967_) {
         super(p_20966_, p_20967_);
+    }
+
+    public void setBalloonItem(ItemLike item) {
+        balloonItem = item.asItem();
     }
 
     @Override
@@ -28,10 +37,11 @@ public class BalloonEntity extends Entity {
         return new ClientboundAddEntityPacket(this);
     }
 
-    @SuppressWarnings("unchecked")
-    public static void build(EntityType.Builder<?> builder) {
+    @SuppressWarnings({"unchecked", "UnusedReturnValue"})
+    public static EntityType.Builder<?> build(EntityType.Builder<?> builder) {
         EntityType.Builder<BalloonEntity> entityBuilder = (EntityType.Builder<BalloonEntity>) builder;
-        entityBuilder.sized(.25f, .25f);
+        entityBuilder.sized(0.5f, 0.6f);
+        return entityBuilder;
     }
 
     @Override
@@ -40,5 +50,11 @@ public class BalloonEntity extends Entity {
         this.setDeltaMovement(getDeltaMovement().x, 0.27f, getDeltaMovement().z);
         this.move(MoverType.SELF, this.getDeltaMovement());
         if(this.getY() > 1024) this.kill();
+    }
+
+    @Override
+    public boolean hurt(@NotNull DamageSource pSource, float pAmount) {
+        this.kill();
+        return true;
     }
 }

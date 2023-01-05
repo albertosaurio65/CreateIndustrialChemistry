@@ -4,10 +4,15 @@ import net.forsteri.createindustrialchemistry.substances.abstracts.ChemicalSubst
 import net.forsteri.createindustrialchemistry.substances.compound.CalciumOxide;
 import net.forsteri.createindustrialchemistry.substances.element.Potassium;
 import net.forsteri.createindustrialchemistry.substances.element.Sodium;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.Material;
 import net.minecraftforge.registries.RegistryObject;
 
 import static net.forsteri.createindustrialchemistry.entry.CreativeModeTabs.*;
+import static net.forsteri.createindustrialchemistry.entry.registers.DeferredRegisters.BLOCKS;
 import static net.forsteri.createindustrialchemistry.entry.registers.DeferredRegisters.ITEMS;
 import static net.forsteri.createindustrialchemistry.utility.Registers.Compounds.*;
 
@@ -105,4 +110,12 @@ public class SolidSubstances {
     public static final RegistryObject<Item> CALCIUM_CARBIDE = createCompound("calcium_carbide");
 
     public static final RegistryObject<Item> IRON_DUSTS = createElement("iron_dusts");
+
+    public static final RegistryObject<Block> POLYISOPRENE_BLOCK = BLOCKS.register("polyisoprene_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.AMETHYST)));
+
+    public static final RegistryObject<Item> POLYISOPRENE_BLOCK_ITEM = ITEMS.register("polyisoprene_block",
+            () -> new BlockItem(POLYISOPRENE_BLOCK.get(), new Item.Properties().tab(MIXTURE_TAB)));
+
+    public static final RegistryObject<Item> POLYISOPRENE_SHEET = createCompound("polyisoprene_sheet");
 }

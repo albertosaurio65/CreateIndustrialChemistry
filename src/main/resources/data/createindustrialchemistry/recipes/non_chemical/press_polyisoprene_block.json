@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "createindustrialchemistry:polyisoprene_block"
+    }
+  ],
+  "results": [
+    {
+      "item": "createindustrialchemistry:polyisoprene_sheet"
+    }
+  ]
+}

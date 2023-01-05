@@ -104,6 +104,9 @@
   "item.createindustrialchemistry.calcium_carbide": "碳化钙",
   "iupac.createindustrialchemistry.calcium_carbide": "乙炔钙",
   "formula.createindustrialchemistry.calcium_carbide": "CaC2",
+  "item.createindustrialchemistry.polyisoprene_sheet": "聚异戊二烯板",
+  "iupac.createindustrialchemistry.polyisoprene_sheet": "顺-1,4-聚异戊二烯",
+  "formula.createindustrialchemistry.polyisoprene_sheet": "(C5H8)n",
 
   "itemGroup.fluid_tab" : "机械动力: 工业化学 | 流体",
   "fluid.createindustrialchemistry.hydrogen": "氢气",
@@ -237,6 +240,7 @@
 
   "block.createindustrialchemistry.acidic_sand": "含酸的沙子",
   "block.createindustrialchemistry.purified_sand": "纯沙",
+  "block.createindustrialchemistry.polyisoprene_block": "聚异戊二烯塑胶块",
 
   "itemGroup.equipment_tab": "机械动力: 工业化学 | 化学用品",
   "item.createindustrialchemistry.empty_metal_tank": "空罐",
@@ -267,6 +271,7 @@
   "iupac.createindustrialchemistry.format": "中文化学命名法名: %1$s",
   "formula.createindustrialchemistry.format": "化学式: %1$s",
 
+  "item.createindustrialchemistry.empty_balloon": "空气球",
   "item.createindustrialchemistry.hydrogen_balloon": "氢气球",
   "entity.createindustrialchemistry.hydrogen_balloon": "氢气球",
 

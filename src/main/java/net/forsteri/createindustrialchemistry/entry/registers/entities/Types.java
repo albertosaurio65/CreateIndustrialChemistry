@@ -18,8 +18,9 @@ import net.minecraft.world.entity.MobCategory;
 public class Types {
 
     public static final EntityEntry<BalloonEntity> HYDROGEN_BALLOON =
-            register("hydrogen_balloon", BalloonEntity::new, () -> BalloonRenderer::new,MobCategory.MISC, 4, 20, true, false, BalloonEntity::build).register();
+            register("hydrogen_balloon", BalloonEntity::new, () -> (BalloonRenderer::new), MobCategory.MISC, 4, 3, false, false, BalloonEntity::build).register();
 
+    @SuppressWarnings("SameParameterValue")
     private static <T extends Entity> CreateEntityBuilder<T, ?> register(String name, EntityType.EntityFactory<T> factory, NonNullSupplier<NonNullFunction<EntityRendererProvider.Context, EntityRenderer<? super T>>> renderer,
                                                                          MobCategory group, int range, int updateFrequency, boolean sendVelocity, boolean immuneToFire,
                                                                          NonNullConsumer<EntityType.Builder<T>> propertyBuilder) {

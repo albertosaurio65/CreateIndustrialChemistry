@@ -1,0 +1,16 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "createindustrialchemistry:polyisoprene_sheet"
+    },
+    {
+      "item": "minecraft:lead"
+    }
+  ],
+  "results": [
+    {
+      "item": "createindustrialchemistry:empty_balloon"
+    }
+  ]
+}

@@ -104,6 +104,9 @@
   "item.createindustrialchemistry.calcium_carbide": "Calcium Carbide",
   "iupac.createindustrialchemistry.calcium_carbide": "Calcium ethynediide",
   "formula.createindustrialchemistry.calcium_carbide": "CaC2",
+  "item.createindustrialchemistry.polyisoprene_sheet": "Polyisoprene Sheet",
+  "iupac.createindustrialchemistry.polyisoprene_sheet": "cis-1,4-polyisoprene",
+  "formula.createindustrialchemistry.polyisoprene_sheet": "(C5H8)n",
 
   "itemGroup.fluid_tab" : "Fluid",
   "fluid.createindustrialchemistry.hydrogen": "Hydrogen",
@@ -237,6 +240,7 @@
 
   "block.createindustrialchemistry.acidic_sand": "Acidic Sand",
   "block.createindustrialchemistry.purified_sand": "Purified Sand",
+  "block.createindustrialchemistry.polyisoprene_block": "Polyisoprene Block",
 
   "itemGroup.equipment_tab": "Chemical Equipment",
   "item.createindustrialchemistry.empty_metal_tank" : "Empty Metal Tank",
@@ -267,6 +271,7 @@
   "iupac.createindustrialchemistry.format": "IUPAC Name: %1$s",
   "formula.createindustrialchemistry.format": "Chemical Formula: %1$s",
 
+  "item.createindustrialchemistry.empty_balloon": "Empty Balloon",
   "item.createindustrialchemistry.hydrogen_balloon": "Hydrogen Balloon",
   "entity.createindustrialchemistry.hydrogen_balloon": "Hydrogen Balloon",
 

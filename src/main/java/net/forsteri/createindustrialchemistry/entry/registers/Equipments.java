@@ -8,8 +8,8 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.material.Fluids;
 import net.minecraftforge.registries.RegistryObject;
 
-import static net.forsteri.createindustrialchemistry.entry.CreativeModeTabs.*;
-import static net.forsteri.createindustrialchemistry.entry.registers.DeferredRegisters.*;
+import static net.forsteri.createindustrialchemistry.entry.CreativeModeTabs.EQUIPMENT_TAB;
+import static net.forsteri.createindustrialchemistry.entry.registers.DeferredRegisters.ITEMS;
 
 @SuppressWarnings("unused")
 public class Equipments {
@@ -28,6 +28,13 @@ public class Equipments {
                     new Item.Properties()
                             .tab(EQUIPMENT_TAB)
                             .stacksTo(1)
+            ));
+
+    public static final RegistryObject<Item> EMPTY_BALLOON = ITEMS.register("empty_balloon",
+            () -> new Item(
+                    new Item.Properties()
+                            .tab(EQUIPMENT_TAB)
+                            .stacksTo(16)
             ));
 
     public static final RegistryObject<Item> HYDROGEN_BALLOON = ITEMS.register("hydrogen_balloon",

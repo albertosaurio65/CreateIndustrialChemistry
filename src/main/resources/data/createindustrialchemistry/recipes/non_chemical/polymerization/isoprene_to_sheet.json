@@ -1,0 +1,18 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "fluid": "createindustrialchemistry:isoprene",
+      "amount": 100
+    },
+    {
+      "item": "createindustrialchemistry:n_butyllithium"
+    }
+  ],
+  "results": [
+    {
+      "item": "createindustrialchemistry:polyisoprene_sheet"
+    }
+  ],
+  "heatRequirement": "heated"
+}

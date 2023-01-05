@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "createindustrialchemistry:empty_balloon"
+    },
+    {
+      "fluid": "createindustrialchemistry:hydrogen",
+      "amount": 500
+    }
+  ],
+  "results": [
+    {
+      "item": "createindustrialchemistry:hydrogen_balloon"
+    }
+  ]
+}
