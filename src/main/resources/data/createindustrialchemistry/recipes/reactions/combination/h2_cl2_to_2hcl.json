@@ -1,0 +1,19 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "fluid": "createindustrialchemistry:hydrogen",
+      "amount": 500
+    },
+    {
+      "fluid": "createindustrialchemistry:chlorine",
+      "amount": 500
+    }
+  ],
+  "results": [
+    {
+      "fluid": "createindustrialchemistry:hydrogen_chloride",
+      "amount": 500
+    }
+  ]
+}

@@ -46,5 +46,8 @@ public class GasSubstances {
     public static final Registers.Fluids BENZENE = new Registers.Fluids(
             "benzene", false, 0xFFFFFFFF, Registers.Fluids.FluidBlockGens.basic(6.1f), 1, COMPOUND_SUBSTANCE_TAB);
 
+    public static final Registers.Fluids HYDROGEN_CHLORIDE = new Registers.Fluids(
+            "hydrogen_chloride", false, 0xFFFFFFFF, Registers.Fluids.FluidBlockGens.acidic(-5.9f), 1, COMPOUND_SUBSTANCE_TAB);
+
     public static void register(){}
 }

@@ -237,6 +237,10 @@
   "item.createindustrialchemistry.benzene_tank": "Benzene Tank",
   "iupac.createindustrialchemistry.benzene_tank": "Benzene",
   "formula.createindustrialchemistry.benzene_tank": "C6H6",
+  "fluid.createindustrialchemistry.hydrogen_chloride": "Hydrogen Chloride",
+  "item.createindustrialchemistry.hydrogen_chloride_tank": "Hydrogen Chloride Tank",
+  "iupac.createindustrialchemistry.hydrogen_chloride_tank": "Chlorane",
+  "formula.createindustrialchemistry.hydrogen_chloride_tank": "HCl(g)",
 
   "block.createindustrialchemistry.acidic_sand": "Acidic Sand",
   "block.createindustrialchemistry.purified_sand": "Purified Sand",
