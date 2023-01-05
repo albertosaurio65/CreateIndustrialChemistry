@@ -95,7 +95,7 @@ public class SolidSubstances {
 
     public static final RegistryObject<Item> LITHIUM_IODIDE = createCompound("lithium_iodide");
 
-    public static final RegistryObject<Item> GEOTHITE = createCompound("geothite");
+    public static final RegistryObject<Item> GOETHITE = createCompound("goethite");
 
     public static final RegistryObject<Item> NICKEL_OXIDE_HYDROXIDE = createCompound("nickel_oxide_hydroxide");
 
@@ -115,7 +115,7 @@ public class SolidSubstances {
             () -> new Block(BlockBehaviour.Properties.of(Material.AMETHYST)));
 
     public static final RegistryObject<Item> POLYISOPRENE_BLOCK_ITEM = ITEMS.register("polyisoprene_block",
-            () -> new BlockItem(POLYISOPRENE_BLOCK.get(), new Item.Properties().tab(MIXTURE_TAB)));
+            () -> new BlockItem(POLYISOPRENE_BLOCK.get(), new Item.Properties().tab(COMPOUND_SUBSTANCE_TAB)));
 
     public static final RegistryObject<Item> POLYISOPRENE_SHEET = createCompound("polyisoprene_sheet");
 }
