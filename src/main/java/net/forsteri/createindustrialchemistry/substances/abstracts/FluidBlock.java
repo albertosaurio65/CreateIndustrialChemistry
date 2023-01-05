@@ -1,6 +1,7 @@
 package net.forsteri.createindustrialchemistry.substances.abstracts;
 
 import com.google.common.collect.Lists;
+import net.forsteri.createindustrialchemistry.entry.registers.Equipments;
 import net.forsteri.createindustrialchemistry.substances.utility.fluids.TankPickup;
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.core.BlockPos;
@@ -153,7 +154,7 @@ public class FluidBlock extends LiquidBlock implements TankPickup {
                     ((FlowingFluid) this.supplier.get()).getTank()
             );
         } else {
-            return ItemStack.EMPTY;
+            return new ItemStack(Equipments.EMPTY_METAL_TANK.get());
         }
     }
 }

@@ -6,6 +6,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.Block;
@@ -36,6 +37,11 @@ public abstract class RisingGases extends FlowingFluid{
         object2byteLinkedOpenHashMap.defaultReturnValue((byte)127);
         return object2byteLinkedOpenHashMap;
     });
+
+    @Override
+    public void tick(Level pLevel, BlockPos pPos, FluidState pState) {
+        this.spread(pLevel, pPos, pState);
+    }
 
     protected int sourceNeighborCount(LevelReader pLevel, BlockPos pPos) {
         int i = 0;
@@ -149,28 +155,25 @@ public abstract class RisingGases extends FlowingFluid{
     @Override
     protected void spread(LevelAccessor pLevel, BlockPos pPos, FluidState pState) {
         if (!pState.isEmpty()) {
-            BlockState blockstate = pLevel.getBlockState(pPos);
-            BlockPos blockpos = pPos.below();
-            BlockState blockState1 = pLevel.getBlockState(blockpos);
-            FluidState fluidstate = this.getNewLiquid(pLevel, blockpos, blockState1);
-//            if (this.canSpreadTo(pLevel, pPos, blockstate, Direction.UP, blockpos, blockState1, pLevel.getFluidState(blockpos), fluidstate.getType())) {
-//                this.spreadTo(pLevel, blockpos, blockState1, Direction.UP, fluidstate);
-//                if (this.sourceNeighborCount(pLevel, pPos) >= 3) {
-//                    this.spreadToSides(pLevel, pPos, pState, blockstate);
-//                }
-//            } else
-            if (pState.isSource()) {
-                if (pLevel.getBlockState(pPos.above()).getBlock().equals(Blocks.AIR) || pPos.getY() == (pLevel.getMaxBuildHeight() -1)) {
-                    //        this.spreadTo(pLevel, pPos.above(), blockState1, Direction.UP, fluidstate);
-                    pLevel.setBlock(pPos.above(), this.defaultFluidState().createLegacyBlock(), 3);
-                    pLevel.setBlock(pPos, Blocks.AIR.defaultBlockState(), 3);
-                }else{
-//                    this.spreadToSides(pLevel, pPos, pState, blockstate);
-                    assert true;
+            if (canSpreadTo(pLevel, pPos.above())) {
+                if (pPos.getY() != (pLevel.getMaxBuildHeight() - 1)) {
+                    pLevel.setBlock(pPos.above(), this.createLegacyBlock(pState), 3);
                 }
-            }
+                pLevel.setBlock(pPos, Blocks.AIR.defaultBlockState(), 3);
+            } else {
+                int sides = 0;
+                for (Direction dir : Direction.Plane.HORIZONTAL) if (canSpreadTo(pLevel, pPos.relative(dir))) sides++;
 
+                if(pState.getAmount() - sides + 1 > 0) for (Direction dir : Direction.Plane.HORIZONTAL) if (canSpreadTo(pLevel, pPos.relative(dir)))
+                    pLevel.setBlock(pPos.relative(dir), this.getFlowing(pState.getAmount() - sides + 1, false).createLegacyBlock(), 3);
+                if(pState.getAmount() - sides + 1 > 0 && sides > 0) pLevel.setBlock(pPos, Blocks.AIR.defaultBlockState(), 3);
+                assert true;
+            }
         }
+    }
+
+    protected boolean canSpreadTo(LevelAccessor pLevel, BlockPos pPos){
+        return (pLevel.getBlockState(pPos).is(Blocks.AIR) || pLevel.getBlockState(pPos).getBlock() instanceof FluidBlock);
     }
 
     public abstract Item getTank();
