@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " Z ",
+    "SNS",
+    "SFS"
+  ],
+  "key": {
+    "S": {
+      "item": "create:brass_sheet"
+    },
+    "Z": {
+      "item": "create:zinc_block"
+    },
+    "N": {
+      "item": "create:nozzle"
+    },
+    "F": {
+      "item": "create:encased_fan"
+    }
+  },
+  "result": {
+    "item": "createindustrialchemistry:mechanical_cooler"
+  }
+}
