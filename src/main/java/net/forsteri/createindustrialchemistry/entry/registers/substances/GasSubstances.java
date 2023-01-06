@@ -23,7 +23,7 @@ public class GasSubstances {
             "oxygen", true, 0x8887CEEB, ELEMENTARY_SUBSTANCE_TAB);
 
     public static final Registers.Fluids CHLORINE = new Registers.Fluids(
-            "chlorine", true, 0xFFFDFDA0, 7, ELEMENTARY_SUBSTANCE_TAB);
+            "chlorine", true, 0xFFFDFDA0, Registers.Fluids.FluidBlockGens::poisonous, 7, ELEMENTARY_SUBSTANCE_TAB);
 
     public static final Registers.Fluids HYDROGEN_IODIDE = new Registers.Fluids(
             "hydrogen_iodide", true, 0xFFFFFFFF, 7, COMPOUND_SUBSTANCE_TAB);
