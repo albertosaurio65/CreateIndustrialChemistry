@@ -155,6 +155,10 @@ public abstract class RisingGases extends FlowingFluid{
     @Override
     protected void spread(LevelAccessor pLevel, BlockPos pPos, FluidState pState) {
         if (!pState.isEmpty()) {
+            if (pPos.getY() == (pLevel.getMaxBuildHeight() - 1)) {
+                pLevel.setBlock(pPos, Blocks.AIR.defaultBlockState(), 3);
+                return;
+            }
             if (canSpreadTo(pLevel, pPos.above())) {
                 if (pPos.getY() != (pLevel.getMaxBuildHeight() - 1)) {
                     pLevel.setBlock(pPos.above(), this.createLegacyBlock(pState), 3);
