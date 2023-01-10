@@ -14,7 +14,7 @@ import net.minecraft.world.level.material.FlowingFluid;
 import javax.annotation.ParametersAreNonnullByDefault;
 import java.util.function.Supplier;
 
-@SuppressWarnings("deprecation")
+@SuppressWarnings({"deprecation", "unused"})
 @ParametersAreNonnullByDefault
 public class PoisonousFluidBlock extends FluidBlock {
 
@@ -45,10 +45,10 @@ public class PoisonousFluidBlock extends FluidBlock {
     public void entityInside(BlockState pState, Level pLevel, BlockPos pPos, Entity pEntity) {
         if(pEntity instanceof LivingEntity entity && !entity.hasEffect(net.forsteri.createindustrialchemistry.entry.registers.MobEffects.POISON_RESISTANCE.get())){
             if(!entity.hasEffect(MobEffects.POISON)) {
-                entity.addEffect(new MobEffectInstance(MobEffects.POISON, 600, this.level));
+                entity.addEffect(new MobEffectInstance(MobEffects.POISON, 70, this.level));
             }
             if(!entity.hasEffect(MobEffects.CONFUSION)) {
-                entity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 1200, this.level));
+                entity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 100, this.level));
             }
             if(killMob && entity.getHealth() <= 1){
                 entity.hurt(DamageSource.MAGIC, 1);
