@@ -112,7 +112,7 @@ public class SolidSubstances {
     public static final RegistryObject<Item> IRON_DUSTS = createElement("iron_dusts");
 
     public static final RegistryObject<Block> POLYISOPRENE_BLOCK = BLOCKS.register("polyisoprene_block",
-            () -> new Block(BlockBehaviour.Properties.of(Material.AMETHYST)));
+            () -> new Block(BlockBehaviour.Properties.of(Material.AMETHYST).strength(0.3f)));
 
     public static final RegistryObject<Item> POLYISOPRENE_BLOCK_ITEM = ITEMS.register("polyisoprene_block",
             () -> new BlockItem(POLYISOPRENE_BLOCK.get(), new Item.Properties().tab(COMPOUND_SUBSTANCE_TAB)));
