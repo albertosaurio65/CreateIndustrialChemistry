@@ -21,6 +21,10 @@ import net.minecraftforge.fluids.FluidAttributes;
 import net.minecraftforge.fluids.ForgeFlowingFluid;
 import net.minecraftforge.registries.RegistryObject;
 
+import javax.annotation.Nullable;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 import java.util.function.Function;
 
 import static net.forsteri.createindustrialchemistry.entry.CreativeModeTabs.*;
@@ -135,19 +139,43 @@ public class Registers {
     }
 
     public static class Compounds {
-        public static RegistryObject<Item> createCompound(String name){
-            return ITEMS.register(name,
-                    () -> new ChemicalSubstance(new Item.Properties(), COMPOUND_SUBSTANCE_TAB));
+        public static Compounds createCompound(String name){
+            return new Compounds(name).addTabs(COMPOUND_SUBSTANCE_TAB);
         }
 
-        public static RegistryObject<Item> createElement(String name){
-            return ITEMS.register(name,
-                    () -> new ChemicalSubstance(new Item.Properties(), ELEMENTARY_SUBSTANCE_TAB));
+        public static Compounds createElement(String name){
+            return new Compounds(name).addTabs(ELEMENTARY_SUBSTANCE_TAB);
         }
 
-        public static RegistryObject<Item> createMixture(String name){
-            return ITEMS.register(name,
-                    () -> new ChemicalSubstance(new Item.Properties(), MIXTURE_TAB));
+        public static Compounds createMixture(String name){
+            return new Compounds(name).addTabs(MIXTURE_TAB);
+        }
+
+        public final String name;
+
+        public List<CreativeModeTab> tabs;
+
+        public @Nullable RegistryObject<Item> item;
+
+        public Compounds(String name){
+            this.name = name;
+            this.tabs = new ArrayList<>();
+        }
+
+        public Item get(){
+            assert this.item != null;
+            return this.item.get();
+        }
+
+        public Compounds register(){
+            this.item = ITEMS.register(name,
+                    () -> new ChemicalSubstance(new Item.Properties(), tabs.toArray(tabs.toArray(new CreativeModeTab[0]))));
+            return this;
+        }
+
+        public Compounds addTabs(CreativeModeTab... tabs){
+            Collections.addAll(this.tabs, tabs);
+            return this;
         }
     }
 }

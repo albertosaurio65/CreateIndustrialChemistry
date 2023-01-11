@@ -1,6 +1,5 @@
 package net.forsteri.createindustrialchemistry.entry.registers.substances;
 
-import net.forsteri.createindustrialchemistry.substances.abstracts.ChemicalSubstance;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -14,6 +13,7 @@ import static net.forsteri.createindustrialchemistry.entry.CreativeModeTabs.MIXT
 import static net.forsteri.createindustrialchemistry.entry.registers.DeferredRegisters.BLOCKS;
 import static net.forsteri.createindustrialchemistry.entry.registers.DeferredRegisters.ITEMS;
 import static net.forsteri.createindustrialchemistry.utility.Registers.Compounds.createMixture;
+import static net.forsteri.createindustrialchemistry.utility.Registers.Compounds;
 
 @SuppressWarnings("unused")
 public class Mixtures {
@@ -31,10 +31,9 @@ public class Mixtures {
     public static final RegistryObject<Item> PURIFIED_SAND_ITEM = ITEMS.register("purified_sand",
             () -> new BlockItem(PURIFIED_SAND.get(), new Item.Properties().tab(MIXTURE_TAB)));
 
-    public static final RegistryObject<Item> COPPER_ZINC_OXIDE = ITEMS.register("copper_zinc_oxide",
-            () -> new ChemicalSubstance(new Item.Properties(), MIXTURE_TAB));
+    public static final Compounds COPPER_ZINC_OXIDE = createMixture("copper_zinc_oxide").register();
 
-    public static final RegistryObject<Item> NI_AL_ZN_ALLOY = createMixture("ni_al_zn_alloy");
+    public static final Compounds NI_AL_ZN_ALLOY = createMixture("ni_al_zn_alloy").register();
 
-    public static final RegistryObject<Item> RANEY_NICKEL = createMixture("raney_nickel");
+    public static final Compounds RANEY_NICKEL = createMixture("raney_nickel").register();
 }
