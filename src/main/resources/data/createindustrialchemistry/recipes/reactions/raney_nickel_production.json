@@ -5,7 +5,7 @@
       "item": "createindustrialchemistry:ni_al_zn_alloy"
     },
     {
-      "fluid": "createindustrialchemistry:sodium_hydroxide_aqueous_solution",
+      "fluid": "createindustrialchemistry:sodium_hydroxide_solution",
       "amount": 500
     }
   ],

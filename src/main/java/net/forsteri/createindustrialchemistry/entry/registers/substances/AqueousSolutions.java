@@ -17,9 +17,6 @@ public class AqueousSolutions {
     public static final Registers.Fluids HYDROIODIC_ACID = new Registers.Fluids(
             "hydroiodic_acid", false, 0xFFFFFFFF, Registers.Fluids.FluidBlockGens.acidic(-1.08f), AQUEOUS_SOLUTION_TAB);
 
-    public static final Registers.Fluids SODIUM_HYDROXIDE_AQUEOUS_SOLUTION = new Registers.Fluids(
-            "sodium_hydroxide_aqueous_solution", false, 0xFFFFFFFF, Registers.Fluids.FluidBlockGens.basic(14.0f), AQUEOUS_SOLUTION_TAB);
-
     public static final Registers.Fluids SODIUM_ALUMINATE_AQUEOUS_SOLUTION = new Registers.Fluids(
             "sodium_aluminate_aqueous_solution", false, 0xFFFFFFFF, Registers.Fluids.FluidBlockGens.basic(14.0f), AQUEOUS_SOLUTION_TAB);
 

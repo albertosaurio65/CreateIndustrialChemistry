@@ -1,0 +1,20 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "fluid": "createindustrialchemistry:potassium_hydroxide_solution",
+      "nbt": {},
+      "amount": 1000
+    }
+  ],
+  "results": [
+    {
+      "item": "createindustrialchemistry:potassium_hydroxide"
+    },
+    {
+      "fluid": "createindustrialchemistry:distilled_water",
+      "amount": 1000
+    }
+  ],
+  "heatRequirement": "heated"
+}

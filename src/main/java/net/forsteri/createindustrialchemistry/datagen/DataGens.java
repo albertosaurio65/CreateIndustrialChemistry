@@ -18,6 +18,7 @@ public class DataGens {
 
         generator.addProvider(new EmptyingModRecipesProvider(generator));
         generator.addProvider(new TankFillingModRecipesProvider(generator));
+        generator.addProvider(new WaterSolutionDryAndProductionRecipesProvider(generator));
         generator.addProvider(new AutoWaterJsonProvider(generator, CreateIndustrialChemistry.MOD_ID, event.getExistingFileHelper()));
         generator.addProvider(new TankModelProvider(generator, CreateIndustrialChemistry.MOD_ID, event.getExistingFileHelper()));
         generator.addProvider(new LootProvider(generator));

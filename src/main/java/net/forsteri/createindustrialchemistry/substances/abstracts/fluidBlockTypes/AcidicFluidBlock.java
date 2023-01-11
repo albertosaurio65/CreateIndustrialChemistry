@@ -34,7 +34,7 @@ public class AcidicFluidBlock extends FluidBlock {
             if(entity.getHealth() < 1){
                 pEntity.hurt(DamageSource.ON_FIRE, 1f);
             }
-            pEntity.hurt(DamageSource.ON_FIRE, (7-this.pH)/10);
+            pEntity.hurt(DamageSource.ON_FIRE, Math.abs(7-this.pH)/100);
             assert attribute != null;
             UUID MODIFIER_ID = UUID.fromString("d5d0d878-b3c2-469b-ba89-ac01c0635a9c");
             double amount = 0;
@@ -43,7 +43,7 @@ public class AcidicFluidBlock extends FluidBlock {
             }
             attribute.removeModifier(MODIFIER_ID);
             if(this.pH < 2 || this.pH > 10) {
-                attribute.addPermanentModifier(new AttributeModifier(MODIFIER_ID, "acid", amount - (7 + (this.pH > 0 ? this.pH : -this.pH)) / 100, AttributeModifier.Operation.ADDITION));
+                attribute.addPermanentModifier(new AttributeModifier(MODIFIER_ID, "acid", amount - Math.abs(7-this.pH)/100, AttributeModifier.Operation.ADDITION));
             }
         }
         super.entityInside(pState, pLevel, pPos, pEntity);

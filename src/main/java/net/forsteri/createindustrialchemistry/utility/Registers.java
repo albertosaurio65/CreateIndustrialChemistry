@@ -8,6 +8,7 @@ import net.forsteri.createindustrialchemistry.substances.abstracts.fluidBlockTyp
 import net.forsteri.createindustrialchemistry.substances.abstracts.fluidBlockTypes.PoisonousFluidBlock;
 import net.forsteri.createindustrialchemistry.substances.abstracts.generals.GeneralFlowingFluid;
 import net.forsteri.createindustrialchemistry.substances.abstracts.generals.GeneralRisingGas;
+import net.forsteri.createindustrialchemistry.substances.abstracts.itemTypes.WaterSolubleItem;
 import net.forsteri.createindustrialchemistry.substances.equipment.MetalTank;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.CreativeModeTab;
@@ -160,6 +161,7 @@ public class Registers {
         public Compounds(String name){
             this.name = name;
             this.tabs = new ArrayList<>();
+            this.waterSoluble = false;
         }
 
         public Item get(){
@@ -168,6 +170,15 @@ public class Registers {
         }
 
         public Compounds register(){
+            if(waterSoluble){
+                this.solution = new Registers.Fluids(this.name+"_solution", false, this.color, this.fluidBlockGen, 3, this.tabs.toArray(new CreativeModeTab[0]));
+
+                this.item = ITEMS.register(name,
+                        () -> new WaterSolubleItem(new Item.Properties(), this.solution.BLOCK,tabs.toArray(tabs.toArray(new CreativeModeTab[0]))));
+
+                return this;
+            }
+
             this.item = ITEMS.register(name,
                     () -> new ChemicalSubstance(new Item.Properties(), tabs.toArray(tabs.toArray(new CreativeModeTab[0]))));
             return this;
@@ -177,5 +188,20 @@ public class Registers {
             Collections.addAll(this.tabs, tabs);
             return this;
         }
+
+        public Compounds waterSoluble(int color, Function<Fluids, FluidBlock> fluidBlockGen){
+            this.waterSoluble = true;
+            this.fluidBlockGen = fluidBlockGen;
+            this.color = color;
+            return this;
+        }
+
+        public boolean waterSoluble;
+
+        protected Function<Fluids, FluidBlock> fluidBlockGen;
+
+        protected int color;
+
+        public @Nullable Fluids solution;
     }
 }

@@ -3,6 +3,7 @@ package net.forsteri.createindustrialchemistry.entry.registers.substances;
 import net.forsteri.createindustrialchemistry.substances.compound.CalciumOxide;
 import net.forsteri.createindustrialchemistry.substances.element.Potassium;
 import net.forsteri.createindustrialchemistry.substances.element.Sodium;
+import net.forsteri.createindustrialchemistry.utility.Registers;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -27,16 +28,18 @@ public class SolidSubstances {
     public static final RegistryObject<Item> POTASSIUM = ITEMS.register("potassium",
             () -> new Potassium(new Item.Properties(), ELEMENTARY_SUBSTANCE_TAB, ALKALI_SUBSTANCE_TAB));
 
-    public static final Compounds SODIUM_HYDROXIDE = new Compounds("sodium_hydroxide")
-            .addTabs(COMPOUND_SUBSTANCE_TAB, ALKALI_SUBSTANCE_TAB)
+    public static final Compounds SODIUM_HYDROXIDE = createCompound("sodium_hydroxide")
+            .addTabs(ALKALI_SUBSTANCE_TAB)
+            .waterSoluble(0xFFFFFFFF, Registers.Fluids.FluidBlockGens.basic(14))
             .register();
 
-    public static final Compounds POTASSIUM_HYDROXIDE = new Compounds("potassium_hydroxide")
-            .addTabs(COMPOUND_SUBSTANCE_TAB, ALKALI_SUBSTANCE_TAB)
+    public static final Compounds POTASSIUM_HYDROXIDE = createCompound("potassium_hydroxide")
+            .addTabs(ALKALI_SUBSTANCE_TAB)
+            .waterSoluble(0xFFFFFFFF, Registers.Fluids.FluidBlockGens.basic(13))
             .register();
 
-    public static final Compounds CALCIUM_CARBONATE = new Compounds("calcium_carbonate")
-            .addTabs(COMPOUND_SUBSTANCE_TAB, ALKALI_SUBSTANCE_TAB)
+    public static final Compounds CALCIUM_CARBONATE = createCompound("calcium_carbonate")
+            .addTabs(ALKALI_SUBSTANCE_TAB)
             .register();
 
     public static final Compounds CALCIUM_CHLORIDE = createCompound("calcium_chloride").register();
@@ -68,7 +71,7 @@ public class SolidSubstances {
 
     public static final Compounds SODIUM_IODIDE = createCompound("sodium_iodide").register();
 
-    public static final Compounds IODINE = createElement("iodine");
+    public static final Compounds IODINE = createElement("iodine").register();
 
     public static final Compounds SPODUMENE = createCompound("spodumene").register();
 

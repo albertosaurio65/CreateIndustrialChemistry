@@ -1,6 +1,10 @@
 {
   "replace": false,
   "values": [
+    "createindustrialchemistry:sodium_hydroxide_solution",
+    "createindustrialchemistry:sodium_hydroxide_solution_flowing",
+    "createindustrialchemistry:potassium_hydroxide_solution",
+    "createindustrialchemistry:potassium_hydroxide_solution_flowing",
     "createindustrialchemistry:distilled_water",
     "createindustrialchemistry:distilled_water_flowing",
     "createindustrialchemistry:molten_salt",
@@ -61,8 +65,6 @@
     "createindustrialchemistry:hydrochloric_acid_flowing",
     "createindustrialchemistry:hydroiodic_acid",
     "createindustrialchemistry:hydroiodic_acid_flowing",
-    "createindustrialchemistry:sodium_hydroxide_aqueous_solution",
-    "createindustrialchemistry:sodium_hydroxide_aqueous_solution_flowing",
     "createindustrialchemistry:sodium_aluminate_aqueous_solution",
     "createindustrialchemistry:sodium_aluminate_aqueous_solution_flowing",
     "createindustrialchemistry:calcium_acetate_aqueous_solution",

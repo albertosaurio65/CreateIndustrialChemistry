@@ -5,14 +5,14 @@
       "item": "createindustrialchemistry:empty_metal_tank"
     },
     {
-      "fluid": "createindustrialchemistry:sodium_hydroxide_aqueous_solution",
+      "fluid": "createindustrialchemistry:potassium_hydroxide_solution",
       "nbt": {},
       "amount": 1000
     }
   ],
   "results": [
     {
-      "item": "createindustrialchemistry:sodium_hydroxide_aqueous_solution_tank"
+      "item": "createindustrialchemistry:potassium_hydroxide_solution_tank"
     }
   ]
 }
