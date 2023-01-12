@@ -1,0 +1,23 @@
+{
+  "type": "createindustrialchemistry:electrolysis",
+  "ingredients": [
+    {
+      "fluid": "minecraft:water",
+      "amount": 1000
+    }
+  ],
+  "results": [
+    {
+      "item": "createindustrialchemistry:sodium_hydroxide",
+      "count": 2
+    },
+    {
+      "fluid": "createindustrialchemistry:hydrogen",
+      "amount": 500
+    },
+    {
+      "fluid": "createindustrialchemistry:chlorine",
+      "amount": 500
+    }
+  ]
+}
