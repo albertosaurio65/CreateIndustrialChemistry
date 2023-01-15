@@ -10,8 +10,7 @@
       "amount": 1000
     },
     {
-      "fluid": "createindustrialchemistry:distilled_water",
-      "amount": 500
+      "item": "createindustrialchemistry:distilled_water_tank"
     }
   ],
   "results": [
@@ -22,6 +21,9 @@
     {
       "fluid": "createindustrialchemistry:carbon_dioxide",
       "amount": 500
+    },
+    {
+      "item": "createindustrialchemistry:empty_metal_tank"
     }
   ],
   "heatRequirement": "superheated"
