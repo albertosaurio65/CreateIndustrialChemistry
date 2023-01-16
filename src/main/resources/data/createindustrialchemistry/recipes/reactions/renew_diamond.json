@@ -2,7 +2,7 @@
   "type": "create:mixing",
   "ingredients": [
     {
-      "item": "createindustrialchemistry:diamond_dusts"
+      "tag": "forge:dusts/diamond"
     },
     {
       "fluid": "createindustrialchemistry:methane",
