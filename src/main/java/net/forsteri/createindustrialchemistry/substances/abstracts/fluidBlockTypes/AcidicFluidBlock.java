@@ -8,6 +8,7 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.attributes.AttributeInstance;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.FlowingFluid;
@@ -30,6 +31,10 @@ public class AcidicFluidBlock extends FluidBlock {
     @Override
     public void entityInside(BlockState pState, Level pLevel, BlockPos pPos, Entity pEntity) {
         if(pEntity instanceof LivingEntity entity){
+            if(pEntity instanceof Player && ((Player) pEntity).isCreative()){
+                return;
+            }
+
             AttributeInstance attribute =  entity.getAttributes().getInstance(Attributes.MAX_HEALTH);
             if(entity.getHealth() < 1){
                 pEntity.hurt(DamageSource.ON_FIRE, 1f);
