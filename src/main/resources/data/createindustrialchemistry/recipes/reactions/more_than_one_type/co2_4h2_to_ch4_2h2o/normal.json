@@ -1,0 +1,31 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "fluid": "createindustrialchemistry:carbon_monoxide",
+      "amount": 250
+    },
+    {
+      "fluid": "createindustrialchemistry:hydrogen",
+      "amount": 1000
+    },
+    {
+      "item": "createindustrialchemistry:nickel"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "createindustrialchemistry:methane",
+      "amount": 250
+    },
+    {
+      "fluid": "createindustrialchemistry:distilled_water",
+      "amount": 500
+    },
+    {
+      "item": "createindustrialchemistry:nickel"
+    }
+  ],
+  "heatRequirement": "heated",
+  "processingTime": 1000
+}

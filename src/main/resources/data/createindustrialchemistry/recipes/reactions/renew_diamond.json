@@ -1,0 +1,23 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "createindustrialchemistry:diamond_dusts"
+    },
+    {
+      "fluid": "createindustrialchemistry:methane",
+      "amount": 500
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:diamond",
+      "count": 2
+    },
+    {
+      "fluid": "createindustrialchemistry:hydrogen",
+      "amount": 1000
+    }
+  ],
+  "heatRequirement": "superheated"
+}

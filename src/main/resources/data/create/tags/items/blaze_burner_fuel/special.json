@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values": [
-    "createindustrialchemistry:propylene_tank",
-    "createindustrialchemistry:methane_tank"
+    "createindustrialchemistry:propylene_tank"
   ]
 }

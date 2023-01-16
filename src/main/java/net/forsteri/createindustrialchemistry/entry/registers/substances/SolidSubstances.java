@@ -108,4 +108,6 @@ public class SolidSubstances {
             () -> new BlockItem(POLYISOPRENE_BLOCK.get(), new Item.Properties().tab(COMPOUND_SUBSTANCE_TAB)));
 
     public static final Compounds POLYISOPRENE_SHEET = createCompound("polyisoprene_sheet").register();
+
+    public static final Compounds DIAMOND_DUSTS = createElement("diamond_dusts").register();
 }

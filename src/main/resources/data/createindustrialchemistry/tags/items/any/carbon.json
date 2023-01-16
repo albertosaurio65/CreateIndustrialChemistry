@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:diamond",
+    "#createindustrialchemistry:any/carbon_for_recipe"
+  ]
+}

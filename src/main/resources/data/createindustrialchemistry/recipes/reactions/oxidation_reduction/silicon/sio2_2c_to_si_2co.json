@@ -2,7 +2,7 @@
   "type": "create:compacting",
   "ingredients": [
     {
-      "item": "createindustrialchemistry:graphite"
+      "tag": "createindustrialchemistry:any/carbon_for_recipe"
     },
     {
       "item": "createindustrialchemistry:silicon_dioxide"

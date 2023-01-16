@@ -10,7 +10,7 @@
       "item": "createindustrialchemistry:silicon_dioxide"
     },
     {
-      "fluid": "createindustrialchemistry:steam",
+      "fluid": "createindustrialchemistry:water_vapor",
       "amount": 50
     }
   ],

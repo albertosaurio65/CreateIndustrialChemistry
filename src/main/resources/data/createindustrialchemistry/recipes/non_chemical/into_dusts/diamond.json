@@ -1,0 +1,14 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "tag": "forge:gems/diamond"
+    }
+  ],
+  "results": [
+    {
+      "item": "createindustrialchemistry:diamond_dusts"
+    }
+  ],
+  "processingTime": 400
+}
