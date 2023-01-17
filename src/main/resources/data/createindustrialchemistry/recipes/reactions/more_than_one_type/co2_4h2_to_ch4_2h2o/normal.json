@@ -27,5 +27,5 @@
     }
   ],
   "heatRequirement": "heated",
-  "processingTime": 1000
+  "processingTime": 400
 }
