@@ -44,7 +44,7 @@ public class CreateIndustrialChemistry {
         DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> TilePartials::register);
         DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> EntityPartials::register);
         MinecraftForge.EVENT_BUS.register(this);
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(ColorHandlers::registerItemColors);
+        DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> () -> eventBus.addListener(ColorHandlers::registerItemColors));
     }
 
     private void setup(final FMLCommonSetupEvent event) {
