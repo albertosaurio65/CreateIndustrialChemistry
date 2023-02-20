@@ -1,7 +1,21 @@
 {
   "replace": false,
   "values": [
+    "createindustrialchemistry:methane_tank",
+    "createindustrialchemistry:ethane_tank",
+    "createindustrialchemistry:propane_tank",
+    "createindustrialchemistry:butane_tank",
+    "createindustrialchemistry:pentane_tank",
+    "createindustrialchemistry:hexane_tank",
+
+    "createindustrialchemistry:ethylene_tank",
     "createindustrialchemistry:propylene_tank",
-    "createindustrialchemistry:methane_tank"
+    "createindustrialchemistry:n_butene_tank",
+    "createindustrialchemistry:n_pentene_tank",
+    "createindustrialchemistry:n_hexene_tank",
+
+    "createindustrialchemistry:isoprene_tank",
+
+    "createindustrialchemistry:acetylene_tank"
   ]
 }

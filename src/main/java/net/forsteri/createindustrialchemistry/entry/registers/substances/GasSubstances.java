@@ -34,8 +34,11 @@ public class GasSubstances {
     public static final Registers.Fluids ISOPROPYL_ALCOHOL_GAS = new Registers.Fluids(
             "isopropyl_alcohol_gas", false, 0xFFFFFFFF, Registers.Fluids.FluidBlockGens.basic(16.5f), 1, COMPOUND_SUBSTANCE_TAB);
 
+    public static final Registers.Fluids ETHYLENE = new Registers.Fluids(
+            "ethylene", false, 0xFFFFFFFF, Registers.Fluids.FluidBlockGens::normal, Registers.Fluids.TankItemGens.fuel(9600), 1, COMPOUND_SUBSTANCE_TAB);
+
     public static final Registers.Fluids PROPYLENE = new Registers.Fluids(
-            "propylene", false, 0xFFFFFFFF, Registers.Fluids.FluidBlockGens.basic(2.1f), Registers.Fluids.TankItemGens.fuel(9600), 1, COMPOUND_SUBSTANCE_TAB);
+            "propylene", false, 0xFFFFFFFF, Registers.Fluids.FluidBlockGens::normal, Registers.Fluids.TankItemGens.fuel(9600), 1, COMPOUND_SUBSTANCE_TAB);
 
     public static final Registers.Fluids METHANE = new Registers.Fluids(
             "methane", true, 0xFFFFFFFF, Registers.Fluids.FluidBlockGens::normal, Registers.Fluids.TankItemGens.fuel(9600), 7, COMPOUND_SUBSTANCE_TAB);
@@ -44,10 +47,34 @@ public class GasSubstances {
             "acetylene", true, 0xFFFFFFFF, Registers.Fluids.FluidBlockGens::normal, 7, COMPOUND_SUBSTANCE_TAB);
 
     public static final Registers.Fluids BENZENE = new Registers.Fluids(
-            "benzene", false, 0xFFFFFFFF, Registers.Fluids.FluidBlockGens.basic(6.1f), 1, COMPOUND_SUBSTANCE_TAB);
+            "benzene", false, 0xFFFFFFFF, Registers.Fluids.FluidBlockGens::poisonous, 1, COMPOUND_SUBSTANCE_TAB);
 
     public static final Registers.Fluids HYDROGEN_CHLORIDE = new Registers.Fluids(
             "hydrogen_chloride", false, 0xFFFFFFFF, Registers.Fluids.FluidBlockGens.acidic(-5.9f), 1, COMPOUND_SUBSTANCE_TAB);
+
+    public static final Registers.Fluids ETHANE = new Registers.Fluids(
+            "ethane", false, 0xFFFFFFFF, Registers.Fluids.FluidBlockGens::normal, Registers.Fluids.TankItemGens.fuel(9600), 7, COMPOUND_SUBSTANCE_TAB);
+
+    public static final Registers.Fluids PROPANE = new Registers.Fluids(
+            "propane", false, 0xFFFFFFFF, Registers.Fluids.FluidBlockGens::normal, Registers.Fluids.TankItemGens.fuel(9600), 7, COMPOUND_SUBSTANCE_TAB);
+
+    public static final Registers.Fluids BUTANE = new Registers.Fluids(
+            "butane", false, 0xFFFFFFFF, Registers.Fluids.FluidBlockGens::normal, Registers.Fluids.TankItemGens.fuel(9600), 7, COMPOUND_SUBSTANCE_TAB);
+
+    public static final Registers.Fluids PENTANE = new Registers.Fluids(
+            "pentane", false, 0xFFFFFFFF, Registers.Fluids.FluidBlockGens::normal, Registers.Fluids.TankItemGens.fuel(9600), 7, COMPOUND_SUBSTANCE_TAB);
+
+    public static final Registers.Fluids HEXANE = new Registers.Fluids(
+            "hexane", false, 0xFFFFFFFF, Registers.Fluids.FluidBlockGens::normal, Registers.Fluids.TankItemGens.fuel(9600), 7, COMPOUND_SUBSTANCE_TAB);
+
+    public static final Registers.Fluids N_BUTENE = new Registers.Fluids(
+            "n_butene", false, 0xFFFFFFFF, Registers.Fluids.FluidBlockGens::normal, Registers.Fluids.TankItemGens.fuel(9600), 1, COMPOUND_SUBSTANCE_TAB);
+
+    public static final Registers.Fluids N_PENTENE = new Registers.Fluids(
+            "n_pentene", false, 0xFFFFFFFF, Registers.Fluids.FluidBlockGens::normal, Registers.Fluids.TankItemGens.fuel(9600), 1, COMPOUND_SUBSTANCE_TAB);
+
+    public static final Registers.Fluids N_HEXENE = new Registers.Fluids(
+            "n_hexene", false, 0xFFFFFFFF, Registers.Fluids.FluidBlockGens::normal, Registers.Fluids.TankItemGens.fuel(9600), 1, COMPOUND_SUBSTANCE_TAB);
 
     public static void register(){}
 }

@@ -1,0 +1,20 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "fluid": "createindustrialchemistry:propane",
+      "amount": 100
+    }
+  ],
+  "results": [
+    {
+      "fluid": "createindustrialchemistry:methane",
+      "amount": 50
+    },
+    {
+      "fluid": "createindustrialchemistry:ethylene",
+      "amount": 50
+    }
+  ],
+  "heatRequirement": "superheated"
+}
