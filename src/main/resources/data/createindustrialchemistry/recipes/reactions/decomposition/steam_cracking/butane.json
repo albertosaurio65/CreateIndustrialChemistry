@@ -1,0 +1,48 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "fluidTag": "forge:butane",
+      "amount": 1000
+    },
+    {
+      "item": "createindustrialchemistry:empty_metal_tank"
+    },
+    {
+      "item": "createindustrialchemistry:empty_metal_tank"
+    },
+    {
+      "item": "createindustrialchemistry:empty_metal_tank"
+    },
+    {
+      "item": "createindustrialchemistry:empty_metal_tank"
+    },
+    {
+      "item": "createindustrialchemistry:empty_metal_tank"
+    },
+    {
+      "item": "createindustrialchemistry:empty_metal_tank"
+    }
+  ],
+  "results": [
+    {
+      "item": "createindustrialchemistry:ethane_tank"
+    },
+    {
+      "item": "createindustrialchemistry:methane_tank"
+    },
+    {
+      "item": "createindustrialchemistry:hydrogen_tank"
+    },
+    {
+      "item": "createindustrialchemistry:ethylene_tank"
+    },
+    {
+      "item": "createindustrialchemistry:propylene_tank"
+    },
+    {
+      "item": "createindustrialchemistry:n_butene_tank"
+    }
+  ],
+  "heatRequirement": "superheated"
+}

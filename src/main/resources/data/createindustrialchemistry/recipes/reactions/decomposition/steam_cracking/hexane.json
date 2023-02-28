@@ -1,0 +1,78 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "fluidTag": "forge:hexane",
+      "amount": 140
+    },
+    {
+      "item": "createindustrialchemistry:empty_metal_tank"
+    },
+    {
+      "item": "createindustrialchemistry:empty_metal_tank"
+    },
+    {
+      "item": "createindustrialchemistry:empty_metal_tank"
+    },
+    {
+      "item": "createindustrialchemistry:empty_metal_tank"
+    },
+    {
+      "item": "createindustrialchemistry:empty_metal_tank"
+    },
+    {
+      "item": "createindustrialchemistry:empty_metal_tank"
+    },
+    {
+      "item": "createindustrialchemistry:empty_metal_tank"
+    },
+    {
+      "item": "createindustrialchemistry:empty_metal_tank"
+    },
+    {
+      "item": "createindustrialchemistry:empty_metal_tank"
+    },
+    {
+      "item": "createindustrialchemistry:empty_metal_tank"
+    },
+    {
+      "item": "createindustrialchemistry:empty_metal_tank"
+    }
+  ],
+  "results": [
+    {
+      "item": "createindustrialchemistry:hydrogen_tank"
+    },
+    {
+      "item": "createindustrialchemistry:methane_tank"
+    },
+    {
+      "item": "createindustrialchemistry:ethane_tank"
+    },
+    {
+      "item": "createindustrialchemistry:propane_tank"
+    },
+    {
+      "item": "createindustrialchemistry:butane_tank"
+    },
+    {
+      "item": "createindustrialchemistry:pentane_tank"
+    },
+    {
+      "item": "createindustrialchemistry:ethylene_tank"
+    },
+    {
+      "item": "createindustrialchemistry:propylene_tank"
+    },
+    {
+      "item": "createindustrialchemistry:n_butene_tank"
+    },
+    {
+      "item": "createindustrialchemistry:n_pentene_tank"
+    },
+    {
+      "item": "createindustrialchemistry:n_hexene_tank"
+    }
+  ],
+  "heatRequirement": "superheated"
+}
