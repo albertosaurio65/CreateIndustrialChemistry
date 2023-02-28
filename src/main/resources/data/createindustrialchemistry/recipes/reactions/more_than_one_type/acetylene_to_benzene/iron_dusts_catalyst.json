@@ -5,7 +5,7 @@
       "tag": "forge:dusts/iron"
     },
     {
-      "fluid": "createindustrialchemistry:acetylene",
+      "fluidTag": "forge:acetylene",
       "amount": 300
     }
   ],

@@ -2,7 +2,7 @@
   "type": "create:mixing",
   "ingredients": [
     {
-      "fluid": "createindustrialchemistry:propylene",
+      "fluidTag": "forge:propylene",
       "amount": 1000
     },
     {

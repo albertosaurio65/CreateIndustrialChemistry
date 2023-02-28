@@ -5,7 +5,7 @@
       "tag": "forge:dusts/diamond"
     },
     {
-      "fluid": "createindustrialchemistry:methane",
+      "fluidTag": "forge:methane",
       "amount": 500
     }
   ],
