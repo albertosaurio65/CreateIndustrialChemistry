@@ -144,15 +144,13 @@ public class FluidBlock extends LiquidBlock implements TankPickup {
     @Override
     public ItemStack tankPickupBlock(LevelAccessor pLevel, BlockPos pPos, BlockState pState) {
         if (pState.getValue(LEVEL) == 0) {
-            pLevel.setBlock(pPos, Blocks.AIR.defaultBlockState(), 11);
-            if(this.supplier.get() instanceof FlowingFluid){
+            if(this.supplier.get() instanceof IFluid fluid){
+                pLevel.setBlock(pPos, Blocks.AIR.defaultBlockState(), 11);
                 return new ItemStack(
-                        ((FlowingFluid) this.supplier.get()).getTank()
+                        fluid.getTank()
                 );
-            }
-            return new ItemStack(
-                    ((FlowingFluid) this.supplier.get()).getTank()
-            );
+            } else
+                return new ItemStack(Equipments.EMPTY_METAL_TANK.get());
         } else {
             return new ItemStack(Equipments.EMPTY_METAL_TANK.get());
         }

@@ -9,10 +9,11 @@ import com.simibubi.create.foundation.utility.recipe.IRecipeTypeInfo;
 import net.forsteri.createindustrialchemistry.CreateIndustrialChemistry;
 import net.forsteri.createindustrialchemistry.entry.registers.DeferredRegisters;
 import net.forsteri.createindustrialchemistry.entry.registers.Equipments;
-import net.forsteri.createindustrialchemistry.substances.abstracts.FlowingFluid;
+import net.forsteri.createindustrialchemistry.substances.abstracts.IFluid;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.recipes.FinishedRecipe;
 import net.minecraft.world.level.material.Fluid;
+import net.minecraftforge.fluids.ForgeFlowingFluid;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.function.Consumer;
@@ -36,13 +37,13 @@ public class TankFillingModRecipesProvider extends ProcessingRecipeGen {
 
     protected void buildCraftingRecipes(Consumer<FinishedRecipe> p_200404_1_) {
         for(RegistryObject<Fluid> fluid : DeferredRegisters.FLUIDS.getEntries()){
-            if(fluid.get() instanceof FlowingFluid) {
+            if(fluid.get() instanceof IFluid) {
                 //noinspection ConstantConditions
                 if(fluid.get().isSource(null)) {
                     create(fluid.getId().getPath(), b ->
-                            b.require(((FlowingFluid) fluid.get()).getSource(), 1000)
+                            b.require(((ForgeFlowingFluid) fluid.get()).getSource(), 1000)
                                     .require(Equipments.EMPTY_METAL_TANK.get())
-                                    .output(((FlowingFluid) fluid.get()).getTank()));
+                                    .output(((IFluid) fluid.get()).getTank()));
                 }
             }
         }

@@ -62,3 +62,9 @@ mandatory=true
 versionRange="[0.5.0.e,)"
 ordering="NONE"
 side="BOTH"
+[[dependencies.createindustrialchemistry]]
+modId="unlimitedfluidity"
+mandatory=true
+versionRange="[0.1,)"
+ordering="NONE"
+side="BOTH"

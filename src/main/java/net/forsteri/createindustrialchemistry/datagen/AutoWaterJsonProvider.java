@@ -1,7 +1,7 @@
 package net.forsteri.createindustrialchemistry.datagen;
 
 import net.forsteri.createindustrialchemistry.entry.registers.DeferredRegisters;
-import net.forsteri.createindustrialchemistry.substances.abstracts.FlowingFluid;
+import net.forsteri.createindustrialchemistry.substances.abstracts.IFluid;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.tags.FluidTagsProvider;
 import net.minecraft.tags.FluidTags;
@@ -18,7 +18,7 @@ public class AutoWaterJsonProvider extends FluidTagsProvider {
     @Override
     public void addTags(){
         for(RegistryObject<Fluid> fluid : DeferredRegisters.FLUIDS.getEntries()){
-            if(fluid.get() instanceof FlowingFluid) {
+            if(fluid.get() instanceof IFluid) {
                 this.tag(FluidTags.WATER).add(fluid.get());
             }
         }
