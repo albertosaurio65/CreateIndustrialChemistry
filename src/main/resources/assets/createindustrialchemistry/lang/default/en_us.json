@@ -36,6 +36,9 @@
   "item.createindustrialchemistry.diamond_dusts": "Diamond Dusts",
   "iupac.createindustrialchemistry.diamond_dusts": "Carbon",
   "formula.createindustrialchemistry.diamond_dusts": "C",
+  "item.createindustrialchemistry.coal_dusts": "Coal Dusts",
+  "iupac.createindustrialchemistry.coal_dusts": "Carbon",
+  "formula.createindustrialchemistry.coal_dusts": "C",
 
   "itemGroup.compound_substance_tab": "Compound Substance",
   "item.createindustrialchemistry.sodium_hydroxide": "Sodium Hydroxide",

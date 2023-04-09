@@ -110,4 +110,6 @@ public class SolidSubstances {
     public static final Compounds POLYISOPRENE_SHEET = createCompound("polyisoprene_sheet").register();
 
     public static final Compounds DIAMOND_DUSTS = createElement("diamond_dusts").register();
+
+    public static final Compounds COAL_DUSTS = createElement("coal_dusts").register();
 }
