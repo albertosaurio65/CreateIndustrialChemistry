@@ -1,7 +1,7 @@
 package net.forsteri.createindustrialchemistry.substances.equipment;
 
 import net.forsteri.createindustrialchemistry.entry.registers.Equipments;
-import net.forsteri.createindustrialchemistry.substances.abstracts.FlowingFluid;
+import net.forsteri.createindustrialchemistry.substances.abstracts.IFluid;
 import net.forsteri.createindustrialchemistry.substances.utility.fluids.TankPickup;
 import net.forsteri.createindustrialchemistry.utility.ChemUtil;
 import net.minecraft.MethodsReturnNonnullByDefault;
@@ -33,7 +33,7 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
 
-import static net.forsteri.createindustrialchemistry.entry.CreativeModeTabs.*;
+import static net.forsteri.createindustrialchemistry.entry.CreativeModeTabs.FLUID_TAB;
 
 
 @SuppressWarnings({"deprecation", "unused"})
@@ -191,7 +191,7 @@ public class MetalTank extends BucketItem {
 
     public static ItemStack getEmptySuccessItem(ItemStack pBucketStack, Player pPlayer) {
         return !pPlayer.getAbilities().instabuild ? (
-                ((FlowingFluid) ((MetalTank) pBucketStack.getItem()).fluidSupplier.get()).damageTank() ?
+                ((IFluid) ((MetalTank) pBucketStack.getItem()).fluidSupplier.get()).damageTank() ?
                         new ItemStack(Equipments.DIRTY_TANK.get()) :
                         new ItemStack(Equipments.EMPTY_METAL_TANK.get())
         ) : pBucketStack;

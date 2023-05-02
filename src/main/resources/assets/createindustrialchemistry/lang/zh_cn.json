@@ -24,6 +24,8 @@
   "iupac.createindustrialchemistry.iron_dusts" : "铁",
   "item.createindustrialchemistry.diamond_dusts" : "钻石粉",
   "iupac.createindustrialchemistry.diamond_dusts" : "碳",
+  "item.createindustrialchemistry.coal_dusts" : "煤粉",
+  "iupac.createindustrialchemistry.coal_dusts" : "碳",
 
   "itemGroup.compound_substance_tab": "机械动力: 工业化学 | 化合物",
   "item.createindustrialchemistry.sodium_hydroxide": "氢氧化钠",
